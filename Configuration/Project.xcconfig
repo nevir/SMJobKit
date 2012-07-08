@@ -13,8 +13,7 @@ MACOSX_DEPLOYMENT_TARGET = 10.7
 
 // Packaging
 // =========
-INFOPLIST_FILE    = $(TARGET_NAME)/Info.plist
-PRODUCT_NAME      = $(TARGET_NAME)
+PRODUCT_NAME = $(TARGET_NAME)
 
 // Search Paths
 // ============

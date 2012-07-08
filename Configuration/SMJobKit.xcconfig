@@ -5,5 +5,6 @@ DYLIB_CURRENT_VERSION       = 1
 
 // Packaging
 // =========
+INFOPLIST_FILE    = $(TARGET_NAME)/Info.plist
 FRAMEWORK_VERSION = A
 WRAPPER_EXTENSION = framework

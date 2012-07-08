@@ -7,16 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C560D3A15A9419800A05BC2 /* SMJShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560D3915A9419800A05BC2 /* SMJShared.m */; };
+		3C560D4115A9419800A05BC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
+		3C560D4515A9419800A05BC2 /* libSMJShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */; };
+		3C560D6115A941A300A05BC2 /* SMJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560D6015A941A300A05BC2 /* SMJServer.m */; };
+		3C560D6815A941A300A05BC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
+		3C560D8215A9435200A05BC2 /* libSMJShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */; };
+		3C560D8515A9436900A05BC2 /* SMJobKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA1508115A91179001CF9F8 /* SMJobKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C560D8615A9436B00A05BC2 /* SMJClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA150AC15A93C3A001CF9F8 /* SMJClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C560D8715A943D100A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
+		3C560D8815A943D800A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
+		3C560D8915A943E800A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
+		3C560D8A15A9440500A05BC2 /* libSMJServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D5A15A941A300A05BC2 /* libSMJServer.a */; };
+		3C560D8B15A9441100A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
+		3C560DB915A9461D00A05BC2 /* SMJobKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB015A9460E00A05BC2 /* SMJobKitTests.m */; };
+		3C560DBA15A9462000A05BC2 /* SMJServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB415A9460E00A05BC2 /* SMJServerTests.m */; };
+		3C560DBB15A9462400A05BC2 /* SMJSharedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB815A9460E00A05BC2 /* SMJSharedTests.m */; };
+		3C560DC215A9469A00A05BC2 /* libSMJShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */; };
 		3CA1508B15A91179001CF9F8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
 		3CA1508F15A91179001CF9F8 /* SMJobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507115A91179001CF9F8 /* SMJobKit.framework */; };
-		3CA1509815A91179001CF9F8 /* SMJobKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1509715A91179001CF9F8 /* SMJobKitTests.m */; };
-		3CA150AE15A93C3A001CF9F8 /* SMJClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA150AC15A93C3A001CF9F8 /* SMJClient.h */; };
 		3CA150AF15A93C3A001CF9F8 /* SMJClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA150AD15A93C3A001CF9F8 /* SMJClient.m */; };
 		3CA150B015A93C5F001CF9F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507915A91179001CF9F8 /* Foundation.framework */; };
 		3CA150B115A93C98001CF9F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507915A91179001CF9F8 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3C560D4315A9419800A05BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C560D2D15A9419800A05BC2;
+			remoteInfo = SMJShared;
+		};
+		3C560D6A15A941A300A05BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C560D5915A941A300A05BC2;
+			remoteInfo = SMJServer;
+		};
+		3C560D8315A9435800A05BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C560D2D15A9419800A05BC2;
+			remoteInfo = SMJShared;
+		};
+		3C560DC015A9469700A05BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C560D2D15A9419800A05BC2;
+			remoteInfo = SMJShared;
+		};
 		3CA1508D15A91179001CF9F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
@@ -27,6 +70,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C560D2E15A9419800A05BC2 /* libSMJShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMJShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C560D2F15A9419800A05BC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3C560D3215A9419800A05BC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3C560D3315A9419800A05BC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3C560D3415A9419800A05BC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C560D3715A9419800A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3C560D3815A9419800A05BC2 /* SMJShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJShared.h; sourceTree = "<group>"; };
+		3C560D3915A9419800A05BC2 /* SMJShared.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJShared.m; sourceTree = "<group>"; };
+		3C560D4015A9419800A05BC2 /* SMJSharedTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMJSharedTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C560D5A15A941A300A05BC2 /* libSMJServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMJServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C560D5E15A941A300A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3C560D5F15A941A300A05BC2 /* SMJServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJServer.h; sourceTree = "<group>"; };
+		3C560D6015A941A300A05BC2 /* SMJServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJServer.m; sourceTree = "<group>"; };
+		3C560D6715A941A300A05BC2 /* SMJServerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMJServerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C560D7C15A9422400A05BC2 /* SMJServer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJServer.xcconfig; sourceTree = "<group>"; };
+		3C560D7E15A9422400A05BC2 /* SMJShared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJShared.xcconfig; sourceTree = "<group>"; };
+		3C560D8115A9428900A05BC2 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		3C560DAD15A9460E00A05BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C560DAE15A9460E00A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3C560DAF15A9460E00A05BC2 /* SMJobKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJobKitTests.h; sourceTree = "<group>"; };
+		3C560DB015A9460E00A05BC2 /* SMJobKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJobKitTests.m; sourceTree = "<group>"; };
+		3C560DB215A9460E00A05BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C560DB315A9460E00A05BC2 /* SMJServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJServerTests.h; sourceTree = "<group>"; };
+		3C560DB415A9460E00A05BC2 /* SMJServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJServerTests.m; sourceTree = "<group>"; };
+		3C560DB615A9460E00A05BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C560DB715A9460E00A05BC2 /* SMJSharedTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJSharedTests.h; sourceTree = "<group>"; };
+		3C560DB815A9460E00A05BC2 /* SMJSharedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJSharedTests.m; sourceTree = "<group>"; };
+		3C560DBC15A9467A00A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3C560DBE15A9468200A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		3CA1507115A91179001CF9F8 /* SMJobKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMJobKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1507915A91179001CF9F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CA1507C15A91179001CF9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,17 +106,12 @@
 		3CA1508115A91179001CF9F8 /* SMJobKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJobKit.h; sourceTree = "<group>"; };
 		3CA1508915A91179001CF9F8 /* SMJobKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMJobKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3CA1509215A91179001CF9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CA1509615A91179001CF9F8 /* SMJobKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJobKitTests.h; sourceTree = "<group>"; };
-		3CA1509715A91179001CF9F8 /* SMJobKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJobKitTests.m; sourceTree = "<group>"; };
 		3CA150A115A911A0001CF9F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		3CA150A215A911A7001CF9F8 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		3CA150A415A91267001CF9F8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		3CA150A515A91267001CF9F8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		3CA150A615A91267001CF9F8 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJobKit.xcconfig; sourceTree = "<group>"; };
-		3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJobKitTests.xcconfig; sourceTree = "<group>"; };
-		3CA150A915A9158E001CF9F8 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		3CA150AA15A93C26001CF9F8 /* SMJServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJServer.h; sourceTree = "<group>"; };
 		3CA150AB15A93C26001CF9F8 /* SMJServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJServer.m; sourceTree = "<group>"; };
 		3CA150AC15A93C3A001CF9F8 /* SMJClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJClient.h; sourceTree = "<group>"; };
@@ -52,10 +119,48 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C560D2B15A9419800A05BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560D8815A943D800A05BC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D3C15A9419800A05BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560D4515A9419800A05BC2 /* libSMJShared.a in Frameworks */,
+				3C560D8B15A9441100A05BC2 /* Foundation.framework in Frameworks */,
+				3C560D4115A9419800A05BC2 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D5715A941A300A05BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560DC215A9469A00A05BC2 /* libSMJShared.a in Frameworks */,
+				3C560D8715A943D100A05BC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D6315A941A300A05BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560D8A15A9440500A05BC2 /* libSMJServer.a in Frameworks */,
+				3C560D8915A943E800A05BC2 /* Foundation.framework in Frameworks */,
+				3C560D6815A941A300A05BC2 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CA1506D15A91179001CF9F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C560D8215A9435200A05BC2 /* libSMJShared.a in Frameworks */,
 				3CA150B015A93C5F001CF9F8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,15 +169,104 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA1508F15A91179001CF9F8 /* SMJobKit.framework in Frameworks */,
 				3CA150B115A93C98001CF9F8 /* Foundation.framework in Frameworks */,
 				3CA1508B15A91179001CF9F8 /* SenTestingKit.framework in Frameworks */,
-				3CA1508F15A91179001CF9F8 /* SMJobKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C560D3115A9419800A05BC2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C560D3215A9419800A05BC2 /* AppKit.framework */,
+				3C560D3315A9419800A05BC2 /* CoreData.framework */,
+				3C560D3415A9419800A05BC2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3C560D3515A9419800A05BC2 /* SMJShared */ = {
+			isa = PBXGroup;
+			children = (
+				3C560D3815A9419800A05BC2 /* SMJShared.h */,
+				3C560D3915A9419800A05BC2 /* SMJShared.m */,
+				3C560D3615A9419800A05BC2 /* Supporting Files */,
+			);
+			path = SMJShared;
+			sourceTree = "<group>";
+		};
+		3C560D3615A9419800A05BC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C560D3715A9419800A05BC2 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C560D5C15A941A300A05BC2 /* SMJServer */ = {
+			isa = PBXGroup;
+			children = (
+				3C560D5F15A941A300A05BC2 /* SMJServer.h */,
+				3C560D6015A941A300A05BC2 /* SMJServer.m */,
+				3C560D5D15A941A300A05BC2 /* Supporting Files */,
+			);
+			path = SMJServer;
+			sourceTree = "<group>";
+		};
+		3C560D5D15A941A300A05BC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C560D5E15A941A300A05BC2 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C560DAB15A9460E00A05BC2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C560DAC15A9460E00A05BC2 /* SMJobKitTests */,
+				3C560DB115A9460E00A05BC2 /* SMJServerTests */,
+				3C560DB515A9460E00A05BC2 /* SMJSharedTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3C560DAC15A9460E00A05BC2 /* SMJobKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C560DAD15A9460E00A05BC2 /* Info.plist */,
+				3C560DAE15A9460E00A05BC2 /* Prefix.pch */,
+				3C560DAF15A9460E00A05BC2 /* SMJobKitTests.h */,
+				3C560DB015A9460E00A05BC2 /* SMJobKitTests.m */,
+			);
+			path = SMJobKitTests;
+			sourceTree = "<group>";
+		};
+		3C560DB115A9460E00A05BC2 /* SMJServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C560DB215A9460E00A05BC2 /* Info.plist */,
+				3C560DBC15A9467A00A05BC2 /* Prefix.pch */,
+				3C560DB315A9460E00A05BC2 /* SMJServerTests.h */,
+				3C560DB415A9460E00A05BC2 /* SMJServerTests.m */,
+			);
+			path = SMJServerTests;
+			sourceTree = "<group>";
+		};
+		3C560DB515A9460E00A05BC2 /* SMJSharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C560DB615A9460E00A05BC2 /* Info.plist */,
+				3C560DBE15A9468200A05BC2 /* Prefix.pch */,
+				3C560DB715A9460E00A05BC2 /* SMJSharedTests.h */,
+				3C560DB815A9460E00A05BC2 /* SMJSharedTests.m */,
+			);
+			path = SMJSharedTests;
+			sourceTree = "<group>";
+		};
 		3CA1506515A91179001CF9F8 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +274,9 @@
 				3CA150A215A911A7001CF9F8 /* LICENSE.txt */,
 				3CA150A315A91267001CF9F8 /* Configuration */,
 				3CA1507A15A91179001CF9F8 /* SMJobKit */,
-				3CA1509015A91179001CF9F8 /* SMJobKitTests */,
+				3C560D3515A9419800A05BC2 /* SMJShared */,
+				3C560D5C15A941A300A05BC2 /* SMJServer */,
+				3C560DAB15A9460E00A05BC2 /* Tests */,
 				3CA1507315A91179001CF9F8 /* Frameworks */,
 				3CA1507215A91179001CF9F8 /* Products */,
 			);
@@ -91,6 +287,10 @@
 			children = (
 				3CA1507115A91179001CF9F8 /* SMJobKit.framework */,
 				3CA1508915A91179001CF9F8 /* SMJobKitTests.octest */,
+				3C560D2E15A9419800A05BC2 /* libSMJShared.a */,
+				3C560D4015A9419800A05BC2 /* SMJSharedTests.octest */,
+				3C560D5A15A941A300A05BC2 /* libSMJServer.a */,
+				3C560D6715A941A300A05BC2 /* SMJServerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +300,8 @@
 			children = (
 				3CA1507915A91179001CF9F8 /* Foundation.framework */,
 				3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */,
+				3C560D2F15A9419800A05BC2 /* Cocoa.framework */,
+				3C560D3115A9419800A05BC2 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,33 +328,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3CA1509015A91179001CF9F8 /* SMJobKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				3CA1509615A91179001CF9F8 /* SMJobKitTests.h */,
-				3CA1509715A91179001CF9F8 /* SMJobKitTests.m */,
-				3CA1509115A91179001CF9F8 /* Supporting Files */,
-			);
-			path = SMJobKitTests;
-			sourceTree = "<group>";
-		};
-		3CA1509115A91179001CF9F8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3CA1509215A91179001CF9F8 /* Info.plist */,
-				3CA150A915A9158E001CF9F8 /* Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		3CA150A315A91267001CF9F8 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
 				3CA150A615A91267001CF9F8 /* Project.xcconfig */,
 				3CA150A415A91267001CF9F8 /* Project-Debug.xcconfig */,
 				3CA150A515A91267001CF9F8 /* Project-Release.xcconfig */,
+				3C560D8115A9428900A05BC2 /* Tests.xcconfig */,
 				3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */,
-				3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */,
+				3C560D7C15A9422400A05BC2 /* SMJServer.xcconfig */,
+				3C560D7E15A9422400A05BC2 /* SMJShared.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -160,17 +345,105 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3C560D2C15A9419800A05BC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D5815A941A300A05BC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CA1506E15A91179001CF9F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA150AE15A93C3A001CF9F8 /* SMJClient.h in Headers */,
+				3C560D8515A9436900A05BC2 /* SMJobKit.h in Headers */,
+				3C560D8615A9436B00A05BC2 /* SMJClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3C560D2D15A9419800A05BC2 /* SMJShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C560D5315A9419800A05BC2 /* Build configuration list for PBXNativeTarget "SMJShared" */;
+			buildPhases = (
+				3C560D2A15A9419800A05BC2 /* Sources */,
+				3C560D2B15A9419800A05BC2 /* Frameworks */,
+				3C560D2C15A9419800A05BC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMJShared;
+			productName = SMJShared;
+			productReference = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3C560D3F15A9419800A05BC2 /* SMJSharedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C560D5415A9419800A05BC2 /* Build configuration list for PBXNativeTarget "SMJSharedTests" */;
+			buildPhases = (
+				3C560D3B15A9419800A05BC2 /* Sources */,
+				3C560D3C15A9419800A05BC2 /* Frameworks */,
+				3C560D3D15A9419800A05BC2 /* Resources */,
+				3C560D3E15A9419800A05BC2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C560D4415A9419800A05BC2 /* PBXTargetDependency */,
+			);
+			name = SMJSharedTests;
+			productName = SMJSharedTests;
+			productReference = 3C560D4015A9419800A05BC2 /* SMJSharedTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3C560D5915A941A300A05BC2 /* SMJServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C560D7615A941A300A05BC2 /* Build configuration list for PBXNativeTarget "SMJServer" */;
+			buildPhases = (
+				3C560D5615A941A300A05BC2 /* Sources */,
+				3C560D5715A941A300A05BC2 /* Frameworks */,
+				3C560D5815A941A300A05BC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C560DC115A9469700A05BC2 /* PBXTargetDependency */,
+			);
+			name = SMJServer;
+			productName = SMJServer;
+			productReference = 3C560D5A15A941A300A05BC2 /* libSMJServer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3C560D6615A941A300A05BC2 /* SMJServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C560D7915A941A300A05BC2 /* Build configuration list for PBXNativeTarget "SMJServerTests" */;
+			buildPhases = (
+				3C560D6215A941A300A05BC2 /* Sources */,
+				3C560D6315A941A300A05BC2 /* Frameworks */,
+				3C560D6415A941A300A05BC2 /* Resources */,
+				3C560D6515A941A300A05BC2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C560D6B15A941A300A05BC2 /* PBXTargetDependency */,
+			);
+			name = SMJServerTests;
+			productName = SMJServerTests;
+			productReference = 3C560D6715A941A300A05BC2 /* SMJServerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		3CA1507015A91179001CF9F8 /* SMJobKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CA1509B15A91179001CF9F8 /* Build configuration list for PBXNativeTarget "SMJobKit" */;
@@ -183,6 +456,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3C560D8415A9435800A05BC2 /* PBXTargetDependency */,
 			);
 			name = SMJobKit;
 			productName = SMJobKit;
@@ -230,12 +504,30 @@
 			projectRoot = "";
 			targets = (
 				3CA1507015A91179001CF9F8 /* SMJobKit */,
+				3C560D5915A941A300A05BC2 /* SMJServer */,
+				3C560D2D15A9419800A05BC2 /* SMJShared */,
 				3CA1508815A91179001CF9F8 /* SMJobKitTests */,
+				3C560D6615A941A300A05BC2 /* SMJServerTests */,
+				3C560D3F15A9419800A05BC2 /* SMJSharedTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3C560D3D15A9419800A05BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D6415A941A300A05BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CA1506F15A91179001CF9F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +545,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C560D3E15A9419800A05BC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		3C560D6515A941A300A05BC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		3CA1508715A91179001CF9F8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +587,38 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C560D2A15A9419800A05BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560D3A15A9419800A05BC2 /* SMJShared.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D3B15A9419800A05BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560DBB15A9462400A05BC2 /* SMJSharedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D5615A941A300A05BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560D6115A941A300A05BC2 /* SMJServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C560D6215A941A300A05BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C560DBA15A9462000A05BC2 /* SMJServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CA1506C15A91179001CF9F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,13 +631,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA1509815A91179001CF9F8 /* SMJobKitTests.m in Sources */,
+				3C560DB915A9461D00A05BC2 /* SMJobKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3C560D4415A9419800A05BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C560D2D15A9419800A05BC2 /* SMJShared */;
+			targetProxy = 3C560D4315A9419800A05BC2 /* PBXContainerItemProxy */;
+		};
+		3C560D6B15A941A300A05BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C560D5915A941A300A05BC2 /* SMJServer */;
+			targetProxy = 3C560D6A15A941A300A05BC2 /* PBXContainerItemProxy */;
+		};
+		3C560D8415A9435800A05BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C560D2D15A9419800A05BC2 /* SMJShared */;
+			targetProxy = 3C560D8315A9435800A05BC2 /* PBXContainerItemProxy */;
+		};
+		3C560DC115A9469700A05BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C560D2D15A9419800A05BC2 /* SMJShared */;
+			targetProxy = 3C560DC015A9469700A05BC2 /* PBXContainerItemProxy */;
+		};
 		3CA1508E15A91179001CF9F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3CA1507015A91179001CF9F8 /* SMJobKit */;
@@ -296,6 +666,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3C560D4F15A9419800A05BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D7E15A9422400A05BC2 /* SMJShared.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3C560D5015A9419800A05BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D7E15A9422400A05BC2 /* SMJShared.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3C560D5115A9419800A05BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D8115A9428900A05BC2 /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3C560D5215A9419800A05BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D8115A9428900A05BC2 /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3C560D7715A941A300A05BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D7C15A9422400A05BC2 /* SMJServer.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3C560D7815A941A300A05BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D7C15A9422400A05BC2 /* SMJServer.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3C560D7A15A941A300A05BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D8115A9428900A05BC2 /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3C560D7B15A941A300A05BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C560D8115A9428900A05BC2 /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
 		3CA1509915A91179001CF9F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CA150A415A91267001CF9F8 /* Project-Debug.xcconfig */;
@@ -326,14 +752,14 @@
 		};
 		3CA1509F15A91179001CF9F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */;
+			baseConfigurationReference = 3C560D8115A9428900A05BC2 /* Tests.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		3CA150A015A91179001CF9F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */;
+			baseConfigurationReference = 3C560D8115A9428900A05BC2 /* Tests.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
@@ -341,6 +767,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C560D5315A9419800A05BC2 /* Build configuration list for PBXNativeTarget "SMJShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C560D4F15A9419800A05BC2 /* Debug */,
+				3C560D5015A9419800A05BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C560D5415A9419800A05BC2 /* Build configuration list for PBXNativeTarget "SMJSharedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C560D5115A9419800A05BC2 /* Debug */,
+				3C560D5215A9419800A05BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C560D7615A941A300A05BC2 /* Build configuration list for PBXNativeTarget "SMJServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C560D7715A941A300A05BC2 /* Debug */,
+				3C560D7815A941A300A05BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C560D7915A941A300A05BC2 /* Build configuration list for PBXNativeTarget "SMJServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C560D7A15A941A300A05BC2 /* Debug */,
+				3C560D7B15A941A300A05BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3CA1506A15A91179001CF9F8 /* Build configuration list for PBXProject "SMJobKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -357,6 +815,7 @@
 				3CA1509D15A91179001CF9F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA1509E15A91179001CF9F8 /* Build configuration list for PBXNativeTarget "SMJobKitTests" */ = {
 			isa = XCConfigurationList;
@@ -365,6 +824,7 @@
 				3CA150A015A91179001CF9F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
