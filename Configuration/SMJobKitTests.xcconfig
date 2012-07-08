@@ -1,0 +1,14 @@
+// Packaging
+// =========
+INFOPLIST_FILE    = $(TARGET_NAME)/Info.plist
+PRODUCT_NAME      = $(TARGET_NAME)
+WRAPPER_EXTENSION = octest
+
+// Search Paths
+// ============
+FRAMEWORK_SEARCH_PATHS = $(DEVELOPER_LIBRARY_DIR)/Frameworks
+
+// Compiler - Language
+// ===================
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER            = $(TARGET_NAME)/Prefix.pch

@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CA1508B15A91179001CF9F8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
+		3CA1508F15A91179001CF9F8 /* SMJobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507115A91179001CF9F8 /* SMJobKit.framework */; };
+		3CA1509815A91179001CF9F8 /* SMJobKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1509715A91179001CF9F8 /* SMJobKitTests.m */; };
+		3CA150AE15A93C3A001CF9F8 /* SMJClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA150AC15A93C3A001CF9F8 /* SMJClient.h */; };
+		3CA150AF15A93C3A001CF9F8 /* SMJClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA150AD15A93C3A001CF9F8 /* SMJClient.m */; };
+		3CA150B015A93C5F001CF9F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507915A91179001CF9F8 /* Foundation.framework */; };
+		3CA150B115A93C98001CF9F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507915A91179001CF9F8 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CA1508D15A91179001CF9F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CA1507015A91179001CF9F8;
+			remoteInfo = SMJobKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CA1507115A91179001CF9F8 /* SMJobKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMJobKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA1507915A91179001CF9F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CA1507C15A91179001CF9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA1508015A91179001CF9F8 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3CA1508115A91179001CF9F8 /* SMJobKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJobKit.h; sourceTree = "<group>"; };
+		3CA1508915A91179001CF9F8 /* SMJobKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMJobKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CA1509215A91179001CF9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA1509615A91179001CF9F8 /* SMJobKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJobKitTests.h; sourceTree = "<group>"; };
+		3CA1509715A91179001CF9F8 /* SMJobKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJobKitTests.m; sourceTree = "<group>"; };
+		3CA150A115A911A0001CF9F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3CA150A215A911A7001CF9F8 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		3CA150A415A91267001CF9F8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		3CA150A515A91267001CF9F8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		3CA150A615A91267001CF9F8 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJobKit.xcconfig; sourceTree = "<group>"; };
+		3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJobKitTests.xcconfig; sourceTree = "<group>"; };
+		3CA150A915A9158E001CF9F8 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3CA150AA15A93C26001CF9F8 /* SMJServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJServer.h; sourceTree = "<group>"; };
+		3CA150AB15A93C26001CF9F8 /* SMJServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJServer.m; sourceTree = "<group>"; };
+		3CA150AC15A93C3A001CF9F8 /* SMJClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJClient.h; sourceTree = "<group>"; };
+		3CA150AD15A93C3A001CF9F8 /* SMJClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CA1506D15A91179001CF9F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA150B015A93C5F001CF9F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA1508515A91179001CF9F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA150B115A93C98001CF9F8 /* Foundation.framework in Frameworks */,
+				3CA1508B15A91179001CF9F8 /* SenTestingKit.framework in Frameworks */,
+				3CA1508F15A91179001CF9F8 /* SMJobKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CA1506515A91179001CF9F8 = {
+			isa = PBXGroup;
+			children = (
+				3CA150A115A911A0001CF9F8 /* README.md */,
+				3CA150A215A911A7001CF9F8 /* LICENSE.txt */,
+				3CA150A315A91267001CF9F8 /* Configuration */,
+				3CA1507A15A91179001CF9F8 /* SMJobKit */,
+				3CA1509015A91179001CF9F8 /* SMJobKitTests */,
+				3CA1507315A91179001CF9F8 /* Frameworks */,
+				3CA1507215A91179001CF9F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CA1507215A91179001CF9F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1507115A91179001CF9F8 /* SMJobKit.framework */,
+				3CA1508915A91179001CF9F8 /* SMJobKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CA1507315A91179001CF9F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1507915A91179001CF9F8 /* Foundation.framework */,
+				3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CA1507A15A91179001CF9F8 /* SMJobKit */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1508115A91179001CF9F8 /* SMJobKit.h */,
+				3CA150AA15A93C26001CF9F8 /* SMJServer.h */,
+				3CA150AB15A93C26001CF9F8 /* SMJServer.m */,
+				3CA150AC15A93C3A001CF9F8 /* SMJClient.h */,
+				3CA150AD15A93C3A001CF9F8 /* SMJClient.m */,
+				3CA1507B15A91179001CF9F8 /* Supporting Files */,
+			);
+			path = SMJobKit;
+			sourceTree = "<group>";
+		};
+		3CA1507B15A91179001CF9F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1507C15A91179001CF9F8 /* Info.plist */,
+				3CA1508015A91179001CF9F8 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CA1509015A91179001CF9F8 /* SMJobKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1509615A91179001CF9F8 /* SMJobKitTests.h */,
+				3CA1509715A91179001CF9F8 /* SMJobKitTests.m */,
+				3CA1509115A91179001CF9F8 /* Supporting Files */,
+			);
+			path = SMJobKitTests;
+			sourceTree = "<group>";
+		};
+		3CA1509115A91179001CF9F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1509215A91179001CF9F8 /* Info.plist */,
+				3CA150A915A9158E001CF9F8 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CA150A315A91267001CF9F8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3CA150A615A91267001CF9F8 /* Project.xcconfig */,
+				3CA150A415A91267001CF9F8 /* Project-Debug.xcconfig */,
+				3CA150A515A91267001CF9F8 /* Project-Release.xcconfig */,
+				3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */,
+				3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3CA1506E15A91179001CF9F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA150AE15A93C3A001CF9F8 /* SMJClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CA1507015A91179001CF9F8 /* SMJobKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA1509B15A91179001CF9F8 /* Build configuration list for PBXNativeTarget "SMJobKit" */;
+			buildPhases = (
+				3CA1506C15A91179001CF9F8 /* Sources */,
+				3CA1506D15A91179001CF9F8 /* Frameworks */,
+				3CA1506E15A91179001CF9F8 /* Headers */,
+				3CA1506F15A91179001CF9F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMJobKit;
+			productName = SMJobKit;
+			productReference = 3CA1507115A91179001CF9F8 /* SMJobKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3CA1508815A91179001CF9F8 /* SMJobKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA1509E15A91179001CF9F8 /* Build configuration list for PBXNativeTarget "SMJobKitTests" */;
+			buildPhases = (
+				3CA1508415A91179001CF9F8 /* Sources */,
+				3CA1508515A91179001CF9F8 /* Frameworks */,
+				3CA1508615A91179001CF9F8 /* Resources */,
+				3CA1508715A91179001CF9F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CA1508E15A91179001CF9F8 /* PBXTargetDependency */,
+			);
+			name = SMJobKitTests;
+			productName = SMJobKitTests;
+			productReference = 3CA1508915A91179001CF9F8 /* SMJobKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CA1506715A91179001CF9F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SMJ;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3CA1506A15A91179001CF9F8 /* Build configuration list for PBXProject "SMJobKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CA1506515A91179001CF9F8;
+			productRefGroup = 3CA1507215A91179001CF9F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CA1507015A91179001CF9F8 /* SMJobKit */,
+				3CA1508815A91179001CF9F8 /* SMJobKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CA1506F15A91179001CF9F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA1508615A91179001CF9F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CA1508715A91179001CF9F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CA1506C15A91179001CF9F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA150AF15A93C3A001CF9F8 /* SMJClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA1508415A91179001CF9F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA1509815A91179001CF9F8 /* SMJobKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CA1508E15A91179001CF9F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CA1507015A91179001CF9F8 /* SMJobKit */;
+			targetProxy = 3CA1508D15A91179001CF9F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CA1509915A91179001CF9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA150A415A91267001CF9F8 /* Project-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3CA1509A15A91179001CF9F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA150A515A91267001CF9F8 /* Project-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3CA1509C15A91179001CF9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3CA1509D15A91179001CF9F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3CA1509F15A91179001CF9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3CA150A015A91179001CF9F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA150A815A91340001CF9F8 /* SMJobKitTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CA1506A15A91179001CF9F8 /* Build configuration list for PBXProject "SMJobKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA1509915A91179001CF9F8 /* Debug */,
+				3CA1509A15A91179001CF9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA1509B15A91179001CF9F8 /* Build configuration list for PBXNativeTarget "SMJobKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA1509C15A91179001CF9F8 /* Debug */,
+				3CA1509D15A91179001CF9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3CA1509E15A91179001CF9F8 /* Build configuration list for PBXNativeTarget "SMJobKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA1509F15A91179001CF9F8 /* Debug */,
+				3CA150A015A91179001CF9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CA1506715A91179001CF9F8 /* Project object */;
+}

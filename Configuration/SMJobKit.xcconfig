@@ -1,0 +1,9 @@
+// Linking
+// =======
+DYLIB_COMPATIBILITY_VERSION = 1
+DYLIB_CURRENT_VERSION       = 1
+
+// Packaging
+// =========
+FRAMEWORK_VERSION = A
+WRAPPER_EXTENSION = framework

@@ -1,0 +1,3 @@
+@interface SMJServer : NSObject
+
+@end
