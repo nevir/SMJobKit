@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C560D3A15A9419800A05BC2 /* SMJShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560D3915A9419800A05BC2 /* SMJShared.m */; };
+		3C528CC815AA5B11000AB26E /* NSArrayInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C528CC715AA5B11000AB26E /* NSArrayInteropTests.m */; };
+		3C52F29715AA68A7005A46A1 /* NSDictionaryInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C52F29615AA68A7005A46A1 /* NSDictionaryInteropTests.m */; };
 		3C560D4115A9419800A05BC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
 		3C560D4515A9419800A05BC2 /* libSMJShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */; };
 		3C560D6115A941A300A05BC2 /* SMJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560D6015A941A300A05BC2 /* SMJServer.m */; };
@@ -22,8 +23,21 @@
 		3C560D8B15A9441100A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
 		3C560DB915A9461D00A05BC2 /* SMJobKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB015A9460E00A05BC2 /* SMJobKitTests.m */; };
 		3C560DBA15A9462000A05BC2 /* SMJServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB415A9460E00A05BC2 /* SMJServerTests.m */; };
-		3C560DBB15A9462400A05BC2 /* SMJSharedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB815A9460E00A05BC2 /* SMJSharedTests.m */; };
 		3C560DC215A9469A00A05BC2 /* libSMJShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */; };
+		3C560DCE15A9480300A05BC2 /* NSString+XPCInterop.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DCC15A9480300A05BC2 /* NSString+XPCInterop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C560DCF15A9480300A05BC2 /* NSString+XPCInterop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DCD15A9480300A05BC2 /* NSString+XPCInterop.m */; };
+		3C560DD215A94A4B00A05BC2 /* NSStringInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DD115A94A4B00A05BC2 /* NSStringInteropTests.m */; };
+		3C560DD615A952B100A05BC2 /* NSNumber+XPCInterop.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DD415A952B100A05BC2 /* NSNumber+XPCInterop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C560DD715A952B100A05BC2 /* NSNumber+XPCInterop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DD515A952B100A05BC2 /* NSNumber+XPCInterop.m */; };
+		3C560DDA15A952BE00A05BC2 /* NSObject+XPCInterop.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DD815A952BE00A05BC2 /* NSObject+XPCInterop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C560DDB15A952BE00A05BC2 /* NSObject+XPCInterop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DD915A952BE00A05BC2 /* NSObject+XPCInterop.m */; };
+		3C560DDE15A952D100A05BC2 /* NSArray+XPCInterop.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DDC15A952D100A05BC2 /* NSArray+XPCInterop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C560DDF15A952D100A05BC2 /* NSArray+XPCInterop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DDD15A952D100A05BC2 /* NSArray+XPCInterop.m */; };
+		3C560DE215A952E500A05BC2 /* NSDictionary+XPCInterop.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DE015A952E400A05BC2 /* NSDictionary+XPCInterop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C560DE315A952E500A05BC2 /* NSDictionary+XPCInterop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DE115A952E500A05BC2 /* NSDictionary+XPCInterop.m */; };
+		3C560DE615AA304300A05BC2 /* NSNumberInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DE515AA304300A05BC2 /* NSNumberInteropTests.m */; };
+		3C560DEC15AA4E0700A05BC2 /* SMJDiagnostics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DEA15AA4E0600A05BC2 /* SMJDiagnostics.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3C560DED15AA4E0700A05BC2 /* SMJDiagnostics.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DEB15AA4E0600A05BC2 /* SMJDiagnostics.m */; };
 		3CA1508B15A91179001CF9F8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
 		3CA1508F15A91179001CF9F8 /* SMJobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507115A91179001CF9F8 /* SMJobKit.framework */; };
 		3CA150AF15A93C3A001CF9F8 /* SMJClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA150AD15A93C3A001CF9F8 /* SMJClient.m */; };
@@ -70,14 +84,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C528CC715AA5B11000AB26E /* NSArrayInteropTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayInteropTests.m; sourceTree = "<group>"; };
+		3C52F29615AA68A7005A46A1 /* NSDictionaryInteropTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryInteropTests.m; sourceTree = "<group>"; };
 		3C560D2E15A9419800A05BC2 /* libSMJShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMJShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C560D2F15A9419800A05BC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3C560D3215A9419800A05BC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3C560D3315A9419800A05BC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3C560D3415A9419800A05BC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C560D3715A9419800A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		3C560D3815A9419800A05BC2 /* SMJShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJShared.h; sourceTree = "<group>"; };
-		3C560D3915A9419800A05BC2 /* SMJShared.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJShared.m; sourceTree = "<group>"; };
 		3C560D4015A9419800A05BC2 /* SMJSharedTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMJSharedTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C560D5A15A941A300A05BC2 /* libSMJServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMJServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C560D5E15A941A300A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -95,10 +109,23 @@
 		3C560DB315A9460E00A05BC2 /* SMJServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJServerTests.h; sourceTree = "<group>"; };
 		3C560DB415A9460E00A05BC2 /* SMJServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJServerTests.m; sourceTree = "<group>"; };
 		3C560DB615A9460E00A05BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C560DB715A9460E00A05BC2 /* SMJSharedTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJSharedTests.h; sourceTree = "<group>"; };
-		3C560DB815A9460E00A05BC2 /* SMJSharedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJSharedTests.m; sourceTree = "<group>"; };
 		3C560DBC15A9467A00A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		3C560DBE15A9468200A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		3C560DCC15A9480300A05BC2 /* NSString+XPCInterop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XPCInterop.h"; sourceTree = "<group>"; };
+		3C560DCD15A9480300A05BC2 /* NSString+XPCInterop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XPCInterop.m"; sourceTree = "<group>"; };
+		3C560DD115A94A4B00A05BC2 /* NSStringInteropTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringInteropTests.m; sourceTree = "<group>"; };
+		3C560DD415A952B100A05BC2 /* NSNumber+XPCInterop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+XPCInterop.h"; sourceTree = "<group>"; };
+		3C560DD515A952B100A05BC2 /* NSNumber+XPCInterop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+XPCInterop.m"; sourceTree = "<group>"; };
+		3C560DD815A952BE00A05BC2 /* NSObject+XPCInterop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XPCInterop.h"; sourceTree = "<group>"; };
+		3C560DD915A952BE00A05BC2 /* NSObject+XPCInterop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XPCInterop.m"; sourceTree = "<group>"; };
+		3C560DDC15A952D100A05BC2 /* NSArray+XPCInterop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XPCInterop.h"; sourceTree = "<group>"; };
+		3C560DDD15A952D100A05BC2 /* NSArray+XPCInterop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XPCInterop.m"; sourceTree = "<group>"; };
+		3C560DE015A952E400A05BC2 /* NSDictionary+XPCInterop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XPCInterop.h"; sourceTree = "<group>"; };
+		3C560DE115A952E500A05BC2 /* NSDictionary+XPCInterop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XPCInterop.m"; sourceTree = "<group>"; };
+		3C560DE515AA304300A05BC2 /* NSNumberInteropTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNumberInteropTests.m; sourceTree = "<group>"; };
+		3C560DE915AA3DD700A05BC2 /* TestHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHelpers.h; sourceTree = "<group>"; };
+		3C560DEA15AA4E0600A05BC2 /* SMJDiagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJDiagnostics.h; sourceTree = "<group>"; };
+		3C560DEB15AA4E0600A05BC2 /* SMJDiagnostics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJDiagnostics.m; sourceTree = "<group>"; };
 		3CA1507115A91179001CF9F8 /* SMJobKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMJobKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1507915A91179001CF9F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CA1507C15A91179001CF9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,19 +218,21 @@
 		3C560D3515A9419800A05BC2 /* SMJShared */ = {
 			isa = PBXGroup;
 			children = (
-				3C560D3815A9419800A05BC2 /* SMJShared.h */,
-				3C560D3915A9419800A05BC2 /* SMJShared.m */,
-				3C560D3615A9419800A05BC2 /* Supporting Files */,
+				3C560D3715A9419800A05BC2 /* Prefix.pch */,
+				3C560DDC15A952D100A05BC2 /* NSArray+XPCInterop.h */,
+				3C560DDD15A952D100A05BC2 /* NSArray+XPCInterop.m */,
+				3C560DE015A952E400A05BC2 /* NSDictionary+XPCInterop.h */,
+				3C560DE115A952E500A05BC2 /* NSDictionary+XPCInterop.m */,
+				3C560DD415A952B100A05BC2 /* NSNumber+XPCInterop.h */,
+				3C560DD515A952B100A05BC2 /* NSNumber+XPCInterop.m */,
+				3C560DD815A952BE00A05BC2 /* NSObject+XPCInterop.h */,
+				3C560DD915A952BE00A05BC2 /* NSObject+XPCInterop.m */,
+				3C560DCC15A9480300A05BC2 /* NSString+XPCInterop.h */,
+				3C560DCD15A9480300A05BC2 /* NSString+XPCInterop.m */,
+				3C560DEA15AA4E0600A05BC2 /* SMJDiagnostics.h */,
+				3C560DEB15AA4E0600A05BC2 /* SMJDiagnostics.m */,
 			);
 			path = SMJShared;
-			sourceTree = "<group>";
-		};
-		3C560D3615A9419800A05BC2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3C560D3715A9419800A05BC2 /* Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3C560D5C15A941A300A05BC2 /* SMJServer */ = {
@@ -261,8 +290,11 @@
 			children = (
 				3C560DB615A9460E00A05BC2 /* Info.plist */,
 				3C560DBE15A9468200A05BC2 /* Prefix.pch */,
-				3C560DB715A9460E00A05BC2 /* SMJSharedTests.h */,
-				3C560DB815A9460E00A05BC2 /* SMJSharedTests.m */,
+				3C560DE915AA3DD700A05BC2 /* TestHelpers.h */,
+				3C528CC715AA5B11000AB26E /* NSArrayInteropTests.m */,
+				3C52F29615AA68A7005A46A1 /* NSDictionaryInteropTests.m */,
+				3C560DD115A94A4B00A05BC2 /* NSStringInteropTests.m */,
+				3C560DE515AA304300A05BC2 /* NSNumberInteropTests.m */,
 			);
 			path = SMJSharedTests;
 			sourceTree = "<group>";
@@ -349,6 +381,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C560DDE15A952D100A05BC2 /* NSArray+XPCInterop.h in Headers */,
+				3C560DE215A952E500A05BC2 /* NSDictionary+XPCInterop.h in Headers */,
+				3C560DD615A952B100A05BC2 /* NSNumber+XPCInterop.h in Headers */,
+				3C560DDA15A952BE00A05BC2 /* NSObject+XPCInterop.h in Headers */,
+				3C560DCE15A9480300A05BC2 /* NSString+XPCInterop.h in Headers */,
+				3C560DEC15AA4E0700A05BC2 /* SMJDiagnostics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +629,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C560D3A15A9419800A05BC2 /* SMJShared.m in Sources */,
+				3C560DCF15A9480300A05BC2 /* NSString+XPCInterop.m in Sources */,
+				3C560DD715A952B100A05BC2 /* NSNumber+XPCInterop.m in Sources */,
+				3C560DDB15A952BE00A05BC2 /* NSObject+XPCInterop.m in Sources */,
+				3C560DDF15A952D100A05BC2 /* NSArray+XPCInterop.m in Sources */,
+				3C560DE315A952E500A05BC2 /* NSDictionary+XPCInterop.m in Sources */,
+				3C560DED15AA4E0700A05BC2 /* SMJDiagnostics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +642,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C560DBB15A9462400A05BC2 /* SMJSharedTests.m in Sources */,
+				3C560DD215A94A4B00A05BC2 /* NSStringInteropTests.m in Sources */,
+				3C560DE615AA304300A05BC2 /* NSNumberInteropTests.m in Sources */,
+				3C528CC815AA5B11000AB26E /* NSArrayInteropTests.m in Sources */,
+				3C52F29715AA68A7005A46A1 /* NSDictionaryInteropTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,6 +820,7 @@
 				3C560D5015A9419800A05BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C560D5415A9419800A05BC2 /* Build configuration list for PBXNativeTarget "SMJSharedTests" */ = {
 			isa = XCConfigurationList;
@@ -782,6 +829,7 @@
 				3C560D5215A9419800A05BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C560D7615A941A300A05BC2 /* Build configuration list for PBXNativeTarget "SMJServer" */ = {
 			isa = XCConfigurationList;
@@ -790,6 +838,7 @@
 				3C560D7815A941A300A05BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C560D7915A941A300A05BC2 /* Build configuration list for PBXNativeTarget "SMJServerTests" */ = {
 			isa = XCConfigurationList;
@@ -798,6 +847,7 @@
 				3C560D7B15A941A300A05BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA1506A15A91179001CF9F8 /* Build configuration list for PBXProject "SMJobKit" */ = {
 			isa = XCConfigurationList;

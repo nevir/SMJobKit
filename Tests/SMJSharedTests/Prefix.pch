@@ -1,1 +1,5 @@
+#import <Foundation/Foundation.h>
 #import <SenTestingKit/SenTestingKit.h>
+#import <xpc/xpc.h>
+
+#import "TestHelpers.h"

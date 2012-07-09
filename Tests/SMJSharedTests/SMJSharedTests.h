@@ -1,3 +1,0 @@
-@interface SMJSharedTests : SenTestCase
-
-@end

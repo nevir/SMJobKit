@@ -1,3 +1,8 @@
+// Linking
+// =======
+// The linker will strip categories without this :(
+OTHER_LDFLAGS = -all_load
+
 // Packaging
 // =========
 INFOPLIST_FILE    = Tests/$(TARGET_NAME)/Info.plist
