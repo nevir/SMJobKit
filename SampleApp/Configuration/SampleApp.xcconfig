@@ -1,9 +1,0 @@
-// Packaging
-// =========
-PRODUCT_NAME   = $(TARGET_NAME)
-INFOPLIST_FILE = SampleApp/SampleApp-Info.plist
-
-// Compiler - Language
-// ===================
-GCC_PRECOMPILE_PREFIX_HEADER = YES
-GCC_PREFIX_HEADER            = SampleApp/SampleApp-Prefix.pch

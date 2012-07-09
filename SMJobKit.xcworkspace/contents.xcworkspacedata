@@ -4,7 +4,4 @@
    <FileRef
       location = "container:SMJobKit.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:SampleApp/SampleApp.xcodeproj">
-   </FileRef>
 </Workspace>
