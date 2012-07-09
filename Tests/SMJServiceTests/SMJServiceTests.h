@@ -1,0 +1,3 @@
+@interface SMJServiceTests : SenTestCase
+
+@end

@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>net.nevir.SampleApp.SampleServer</string>
+	<string>net.nevir.SampleApp.SampleService</string>
 	<key>MachServices</key>
 	<dict>
-		<key>net.nevir.SampleApp.SampleServer</key>
+		<key>net.nevir.SampleApp.SampleService</key>
 		<true/>
 	</dict>
 </dict>

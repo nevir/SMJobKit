@@ -8,7 +8,7 @@ SKIP_INSTALL = YES
 
 // Linking
 // =======
-OTHER_LDFLAGS = -sectcreate __TEXT __info_plist SampleServer/SampleServer-Info.plist -sectcreate __TEXT __launchd_plist SampleServer/SampleServer-Launchd.plist
+OTHER_LDFLAGS = -sectcreate __TEXT __info_plist SampleService/SampleService-Info.plist -sectcreate __TEXT __launchd_plist SampleService/SampleService-Launchd.plist
 
 // Packaging
 // =========
@@ -17,4 +17,4 @@ PRODUCT_NAME   = net.nevir.$(PROJECT_NAME).$(TARGET_NAME)
 // Compiler - Language
 // ===================
 GCC_PRECOMPILE_PREFIX_HEADER = YES
-GCC_PREFIX_HEADER            = SampleServer/SampleServer-Prefix.pch
+GCC_PREFIX_HEADER            = SampleService/SampleService-Prefix.pch

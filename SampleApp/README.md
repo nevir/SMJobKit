@@ -12,8 +12,8 @@ Configuring Your Project
 
 2. In your app's build phases, add `SMJobKit.framework` to be linked.
 
-Creating The Job Server
------------------------
+Creating The Job Service
+------------------------
 
 Unlike XPC services, system jobs are pure binaries (not bundles), which makes
 our lives a bit less pleasant.
@@ -21,7 +21,7 @@ our lives a bit less pleasant.
 1. Create a new command line tool target (type `Foundation` is a good starting
    point).
 
-2. Create an Info.plist for the server, [as per the sample](SampleServer/SampleServer-Info.plist):
+2. Create an Info.plist for the service, [as per the sample](SampleService/SampleService-Info.plist):
 
   * Make sure that you set the Bundle identifier to a launchd-appropriate
     service name such as `com.example.AppName.ServiceName`.
@@ -30,13 +30,13 @@ our lives a bit less pleasant.
     your app's bundle identifier, and that the certificate subject *exactly*
     matches your developer certificate!
 
-3. Create a launchd.plist for the server, [as per the sample](SampleServer/SampleServer-Launchd.plist):
+3. Create a launchd.plist for the service, [as per the sample](SampleService/SampleService-Launchd.plist):
 
-  * The label should match your server's bundle identifier.
+  * The label should match your service's bundle identifier.
 
   * Make sure to update the Mach services section with that identifier as well.
 
-4. Configure the build settings [as per the sample](Configuration/SampleServer.xcconfig):
+4. Configure the build settings [as per the sample](Configuration/SampleService.xcconfig):
 
   * The target name should be the same as the bundle identifier you gave it in
     its Info.plist.
@@ -51,4 +51,4 @@ our lives a bit less pleasant.
   * It should be set to the `Wrapper` destination with a subpath of
     `Contents/Library/LaunchServices`.
 
-  * Add the server's product binary to be copied.
+  * Add the service's product binary to be copied.

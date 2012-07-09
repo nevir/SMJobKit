@@ -1,6 +1,6 @@
-#import "SMJServerTests.h"
+#import "SMJServiceTests.h"
 
-@implementation SMJServerTests
+@implementation SMJServiceTests
 
 - (void)setUp
 {
@@ -18,7 +18,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in SMJServerTests");
+    STFail(@"Unit tests are not implemented yet in SMJServiceTests");
 }
 
 @end

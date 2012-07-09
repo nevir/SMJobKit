@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>net.nevir.SampleApp.SampleServer</string>
+	<string>net.nevir.SampleApp.SampleService</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>SampleServer</string>
+	<string>SampleService</string>
 	<key>CFBundleVersion</key>
 	<string>0.01</string>
 	<key>SMAuthorizedClients</key>
