@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3CCC06D015AA823000C84BE1 /* Xcode Templates */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3CCC06D115AA823000C84BE1 /* Build configuration list for PBXAggregateTarget "Xcode Templates" */;
+			buildPhases = (
+				3CCC06D415AA823300C84BE1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Xcode Templates";
+			productName = "SMJobKit Service Template";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		3C528CC815AA5B11000AB26E /* NSArrayInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C528CC715AA5B11000AB26E /* NSArrayInteropTests.m */; };
 		3C52F29715AA68A7005A46A1 /* NSDictionaryInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C52F29615AA68A7005A46A1 /* NSDictionaryInteropTests.m */; };
@@ -46,6 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3C2BFA6E15AA95D20011FA52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCC06D015AA823000C84BE1;
+			remoteInfo = "Xcode Templates";
+		};
 		3C560D4315A9419800A05BC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
@@ -80,6 +101,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3CA1507015A91179001CF9F8;
 			remoteInfo = SMJobKit;
+		};
+		3CCC07B015AA953C00C84BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCC06D015AA823000C84BE1;
+			remoteInfo = "Xcode Templates";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -141,6 +169,11 @@
 		3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJobKit.xcconfig; sourceTree = "<group>"; };
 		3CA150AC15A93C3A001CF9F8 /* SMJClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJClient.h; sourceTree = "<group>"; };
 		3CA150AD15A93C3A001CF9F8 /* SMJClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJClient.m; sourceTree = "<group>"; };
+		3CCC06D515AA837E00C84BE1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CCC06D615AA837E00C84BE1 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		3CCC06D715AA837E00C84BE1 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		3CCC06EA15AA8B1400C84BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCC06EB15AA8B2300C84BE1 /* Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +340,7 @@
 				3C560D5C15A941A300A05BC2 /* SMJService */,
 				3C560D3515A9419800A05BC2 /* SMJShared */,
 				3C560DAB15A9460E00A05BC2 /* Tests */,
+				3CCC07AA15AA949400C84BE1 /* Xcode Templates */,
 				3CA1507315A91179001CF9F8 /* Frameworks */,
 				3CA1507215A91179001CF9F8 /* Products */,
 			);
@@ -368,6 +402,26 @@
 				3C560D7E15A9422400A05BC2 /* SMJShared.xcconfig */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3CCC06C515AA810D00C84BE1 /* SMJobKit Service.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				3CCC06D615AA837E00C84BE1 /* TemplateIcon.icns */,
+				3CCC06D715AA837E00C84BE1 /* TemplateInfo.plist */,
+				3CCC06EA15AA8B1400C84BE1 /* Info.plist */,
+				3CCC06EB15AA8B2300C84BE1 /* Launchd.plist */,
+				3CCC06D515AA837E00C84BE1 /* main.m */,
+			);
+			path = "SMJobKit Service.xctemplate";
+			sourceTree = "<group>";
+		};
+		3CCC07AA15AA949400C84BE1 /* Xcode Templates */ = {
+			isa = PBXGroup;
+			children = (
+				3CCC06C515AA810D00C84BE1 /* SMJobKit Service.xctemplate */,
+			);
+			name = "Xcode Templates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +506,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3C2BFA6F15AA95D20011FA52 /* PBXTargetDependency */,
 				3C560DC115A9469700A05BC2 /* PBXTargetDependency */,
 			);
 			name = SMJService;
@@ -490,6 +545,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3CCC07B115AA953C00C84BE1 /* PBXTargetDependency */,
 				3C560D8415A9435800A05BC2 /* PBXTargetDependency */,
 			);
 			name = SMJobKit;
@@ -543,6 +599,7 @@
 				3CA1508815A91179001CF9F8 /* SMJobKitTests */,
 				3C560D6615A941A300A05BC2 /* SMJServiceTests */,
 				3C560D3F15A9419800A05BC2 /* SMJSharedTests */,
+				3CCC06D015AA823000C84BE1 /* Xcode Templates */,
 			);
 		};
 /* End PBXProject section */
@@ -618,6 +675,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		3CCC06D415AA823300C84BE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -x\n\nDESTINATION=\"$USER_LIBRARY_DIR/Developer/Xcode/Templates/Framework & Library/SMJobKit Service.xctemplate/\"\n\nrm -rf \"$DESTINATION\"\nmkdir -p \"$DESTINATION\"\ncp -R \"$PROJECT_DIR/SMJobKit Service.xctemplate/\" \"$DESTINATION\"\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -680,6 +750,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3C2BFA6F15AA95D20011FA52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCC06D015AA823000C84BE1 /* Xcode Templates */;
+			targetProxy = 3C2BFA6E15AA95D20011FA52 /* PBXContainerItemProxy */;
+		};
 		3C560D4415A9419800A05BC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C560D2D15A9419800A05BC2 /* SMJShared */;
@@ -704,6 +779,11 @@
 			isa = PBXTargetDependency;
 			target = 3CA1507015A91179001CF9F8 /* SMJobKit */;
 			targetProxy = 3CA1508D15A91179001CF9F8 /* PBXContainerItemProxy */;
+		};
+		3CCC07B115AA953C00C84BE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCC06D015AA823000C84BE1 /* Xcode Templates */;
+			targetProxy = 3CCC07B015AA953C00C84BE1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -806,6 +886,18 @@
 			};
 			name = Release;
 		};
+		3CCC06D215AA823000C84BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3CCC06D315AA823000C84BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -868,6 +960,15 @@
 			buildConfigurations = (
 				3CA1509F15A91179001CF9F8 /* Debug */,
 				3CA150A015A91179001CF9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCC06D115AA823000C84BE1 /* Build configuration list for PBXAggregateTarget "Xcode Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCC06D215AA823000C84BE1 /* Debug */,
+				3CCC06D315AA823000C84BE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
