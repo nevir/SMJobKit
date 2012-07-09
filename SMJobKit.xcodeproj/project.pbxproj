@@ -139,8 +139,6 @@
 		3CA150A515A91267001CF9F8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		3CA150A615A91267001CF9F8 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SMJobKit.xcconfig; sourceTree = "<group>"; };
-		3CA150AA15A93C26001CF9F8 /* SMJServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJServer.h; sourceTree = "<group>"; };
-		3CA150AB15A93C26001CF9F8 /* SMJServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJServer.m; sourceTree = "<group>"; };
 		3CA150AC15A93C3A001CF9F8 /* SMJClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJClient.h; sourceTree = "<group>"; };
 		3CA150AD15A93C3A001CF9F8 /* SMJClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -341,9 +339,9 @@
 		3CA1507A15A91179001CF9F8 /* SMJobKit */ = {
 			isa = PBXGroup;
 			children = (
+				3CA1507C15A91179001CF9F8 /* Info.plist */,
+				3CA1508015A91179001CF9F8 /* Prefix.pch */,
 				3CA1508115A91179001CF9F8 /* SMJobKit.h */,
-				3CA150AA15A93C26001CF9F8 /* SMJServer.h */,
-				3CA150AB15A93C26001CF9F8 /* SMJServer.m */,
 				3CA150AC15A93C3A001CF9F8 /* SMJClient.h */,
 				3CA150AD15A93C3A001CF9F8 /* SMJClient.m */,
 				3CA1507B15A91179001CF9F8 /* Supporting Files */,
@@ -354,8 +352,6 @@
 		3CA1507B15A91179001CF9F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3CA1507C15A91179001CF9F8 /* Info.plist */,
-				3CA1508015A91179001CF9F8 /* Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -527,7 +523,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SMJ;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 3CA1506A15A91179001CF9F8 /* Build configuration list for PBXProject "SMJobKit" */;
 			compatibilityVersion = "Xcode 3.2";

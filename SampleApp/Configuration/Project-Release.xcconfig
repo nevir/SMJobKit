@@ -1,0 +1,5 @@
+#include "Project.xcconfig"
+
+// Build Options
+// =============
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym

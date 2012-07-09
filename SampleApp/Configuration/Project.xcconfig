@@ -1,0 +1,28 @@
+// Architectures
+// =============
+ARCHS   = $(ARCHS_STANDARD_64_BIT)
+SDKROOT = macosx
+
+// Build Options
+// =============
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+
+// Deployment
+// ==========
+MACOSX_DEPLOYMENT_TARGET = 10.7
+
+// Search Paths
+// ============
+ALWAYS_SEARCH_USER_PATHS = NO
+
+// Compiler - Language
+// ===================
+CLANG_ENABLE_OBJC_ARC        = YES
+GCC_C_LANGUAGE_STANDARD      = gnu99
+
+// Compiler - Warnings
+// ===================
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES
+GCC_WARN_ABOUT_RETURN_TYPE       = YES
+GCC_WARN_UNINITIALIZED_AUTOS     = YES
+GCC_WARN_UNUSED_VARIABLE         = YES
