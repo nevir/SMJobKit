@@ -16,16 +16,25 @@
 
 @implementation SMJClient
 
+#pragma mark - Abstract Interface
+
++ (NSString*) serviceIdentifier
+{
+  [NSException raise:@"NotImplementedException" format:@"You need to implement serviceIdentifier on %@!", self];
+  return nil;
+}
+
+
 #pragma mark - Public Interface
 
 + (NSString*) bundledVersion
 {
-  return [SMJClientUtility versionForBundlePath:self.bundledServicePath];
+  return [SMJClientUtility versionForBundlePath:[self bundledServicePath]];
 }
 
 + (NSString*) installedVersion
 {
-  return [SMJClientUtility versionForBundlePath:self.installedServicePath];
+  return [SMJClientUtility versionForBundlePath:[self installedServicePath]];
 }
 
 + (BOOL) installWithError:(NSError **)error
@@ -39,12 +48,18 @@
 }
 
 
-#pragma mark - Abstract Interface
+#pragma mark - Diagnostics
 
-+ (NSString*) serviceIdentifier
++ (NSArray*) checkForProblems
 {
-  [NSException raise:@"NotImplementedException" format:@"You need to implement serviceIdentifier on %@!", self];
-  return nil;
+  NSError* error;
+  NSMutableArray* errors = [NSMutableArray array];
+  
+  error = nil;
+  [SMJClientUtility versionForBundlePath:[self bundledServicePath] error:&error];
+  if (error) [errors addObject:error];
+  
+  return (errors.count == 0) ? nil : errors;
 }
 
 

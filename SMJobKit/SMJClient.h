@@ -4,13 +4,21 @@
 // An abstract superclass for system-level launchd helper jobs
 @interface SMJClient : NSObject
 
+// Abstract Interface
++ (NSString*) serviceIdentifier;
+
+// Standard Interface
 + (NSString*) bundledVersion;
 + (NSString*) installedVersion;
 
 + (BOOL) installWithError:(NSError **)error;
 + (BOOL) uninstallWithError:(NSError **)error;
 
-// Must be implemented by subclasses
-+ (NSString*) serviceIdentifier;
+// Diagnostics
+
+// Checks your app, the service and the environment for any potential problems.
+// 
+// Returns an array of `NSError`s if any are found, `nil` otherwise.
++ (NSArray*) checkForProblems;
 
 @end

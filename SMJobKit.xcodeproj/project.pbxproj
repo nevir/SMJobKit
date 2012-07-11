@@ -60,6 +60,7 @@
 		3C560DE615AA304300A05BC2 /* NSNumberInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DE515AA304300A05BC2 /* NSNumberInteropTests.m */; };
 		3C560DEC15AA4E0700A05BC2 /* SMJDiagnostics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DEA15AA4E0600A05BC2 /* SMJDiagnostics.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3C560DED15AA4E0700A05BC2 /* SMJDiagnostics.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DEB15AA4E0600A05BC2 /* SMJDiagnostics.m */; };
+		3C75ECC415AD39600041240E /* SMJMissingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C75ECC315AD39600041240E /* SMJMissingClient.m */; };
 		3CA1508B15A91179001CF9F8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
 		3CA1508F15A91179001CF9F8 /* SMJobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507115A91179001CF9F8 /* SMJobKit.framework */; };
 		3CA150AF15A93C3A001CF9F8 /* SMJClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA150AD15A93C3A001CF9F8 /* SMJClient.m */; };
@@ -193,6 +194,8 @@
 		3C560DE915AA3DD700A05BC2 /* TestHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHelpers.h; sourceTree = "<group>"; };
 		3C560DEA15AA4E0600A05BC2 /* SMJDiagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJDiagnostics.h; sourceTree = "<group>"; };
 		3C560DEB15AA4E0600A05BC2 /* SMJDiagnostics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJDiagnostics.m; sourceTree = "<group>"; };
+		3C75ECC215AD39600041240E /* SMJMissingClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJMissingClient.h; sourceTree = "<group>"; };
+		3C75ECC315AD39600041240E /* SMJMissingClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJMissingClient.m; sourceTree = "<group>"; };
 		3CA1507115A91179001CF9F8 /* SMJobKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMJobKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1507915A91179001CF9F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CA1507C15A91179001CF9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 		3C2BFAA915AB31240011FA52 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				3C75ECC215AD39600041240E /* SMJMissingClient.h */,
+				3C75ECC315AD39600041240E /* SMJMissingClient.m */,
 				3C2BFAAA15AB31390011FA52 /* SMJTestClient.h */,
 				3C2BFAAB15AB31390011FA52 /* SMJTestClient.m */,
 			);
@@ -888,6 +893,7 @@
 			files = (
 				3C560DB915A9461D00A05BC2 /* SMJClientTests.m in Sources */,
 				3C2BFAAC15AB31390011FA52 /* SMJTestClient.m in Sources */,
+				3C75ECC415AD39600041240E /* SMJMissingClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
