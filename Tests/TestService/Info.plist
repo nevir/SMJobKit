@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___PROJECTNAME___.___PACKAGENAMEASIDENTIFIER___</string>
+	<string>net.nevir.SMJobKitTests.TestService</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>___PACKAGENAMEASIDENTIFIER___</string>
+	<string>TestService</string>
 	<key>CFBundleVersion</key>
 	<string>0.01</string>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___PROJECTNAME___ and certificate leaf[subject.CN] = &quot;&lt;CODE_SIGN_IDENTITY&gt;&quot;</string>
+		<string>identifier net.nevir.SMJobKit and certificate leaf[subject.CN] = &quot;&lt;CODE_SIGN_IDENTITY&gt;&quot;</string>
 	</array>
 </dict>
 </plist>

@@ -29,7 +29,7 @@
     xpc_dictionary_set_value(result, [key UTF8String], xpcObject);
     
     // xpc_dictionary_set_value retains the input objects, so we need to clean up
-    xpc_release(xpcObject);
+    SAFE_XPC_RELEASE(xpcObject);
   }];
   
   return result;

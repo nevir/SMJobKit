@@ -21,6 +21,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3C2BFA8D15AB2EC00011FA52 /* SMJClientUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2BFA8B15AB2EC00011FA52 /* SMJClientUtility.h */; };
+		3C2BFA8E15AB2EC00011FA52 /* SMJClientUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2BFA8C15AB2EC00011FA52 /* SMJClientUtility.m */; };
+		3C2BFA9015AB2F6D0011FA52 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2BFA8F15AB2F6D0011FA52 /* ServiceManagement.framework */; };
+		3C2BFA9415AB2FA50011FA52 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2BFA9315AB2FA50011FA52 /* Security.framework */; };
+		3C2BFAAC15AB31390011FA52 /* SMJTestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2BFAAB15AB31390011FA52 /* SMJTestClient.m */; };
+		3C2BFAB215AB33020011FA52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1507915A91179001CF9F8 /* Foundation.framework */; };
+		3C2BFAB515AB33020011FA52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2BFAB415AB33020011FA52 /* main.m */; };
+		3C2BFABE15AB33EF0011FA52 /* net.nevir.SMJobKitTests.TestService in Copy Services */ = {isa = PBXBuildFile; fileRef = 3C2BFAB015AB33020011FA52 /* net.nevir.SMJobKitTests.TestService */; };
+		3C4C2B0215ABEC2B00775A8B /* SMJCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4C2B0115ABEC2B00775A8B /* SMJCompatibility.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3C4C2B0515ABEFAD00775A8B /* SMJError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4C2B0315ABEFAD00775A8B /* SMJError.h */; };
+		3C4C2B0615ABEFAD00775A8B /* SMJError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C2B0415ABEFAD00775A8B /* SMJError.m */; };
+		3C4C2B0815ABF3AB00775A8B /* SMJErrorTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4C2B0715ABF3AB00775A8B /* SMJErrorTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C528CC815AA5B11000AB26E /* NSArrayInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C528CC715AA5B11000AB26E /* NSArrayInteropTests.m */; };
 		3C52F29715AA68A7005A46A1 /* NSDictionaryInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C52F29615AA68A7005A46A1 /* NSDictionaryInteropTests.m */; };
 		3C560D4115A9419800A05BC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */; };
@@ -30,12 +42,8 @@
 		3C560D8215A9435200A05BC2 /* libSMJShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */; };
 		3C560D8515A9436900A05BC2 /* SMJobKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA1508115A91179001CF9F8 /* SMJobKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C560D8615A9436B00A05BC2 /* SMJClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA150AC15A93C3A001CF9F8 /* SMJClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C560D8715A943D100A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
-		3C560D8815A943D800A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
-		3C560D8915A943E800A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
 		3C560D8A15A9440500A05BC2 /* libSMJService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D5A15A941A300A05BC2 /* libSMJService.a */; };
-		3C560D8B15A9441100A05BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D3415A9419800A05BC2 /* Foundation.framework */; };
-		3C560DB915A9461D00A05BC2 /* SMJobKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB015A9460E00A05BC2 /* SMJobKitTests.m */; };
+		3C560DB915A9461D00A05BC2 /* SMJClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB015A9460E00A05BC2 /* SMJClientTests.m */; };
 		3C560DBA15A9462000A05BC2 /* SMJServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560DB415A9460E00A05BC2 /* SMJServiceTests.m */; };
 		3C560DC215A9469A00A05BC2 /* libSMJShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C560D2E15A9419800A05BC2 /* libSMJShared.a */; };
 		3C560DCE15A9480300A05BC2 /* NSString+XPCInterop.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C560DCC15A9480300A05BC2 /* NSString+XPCInterop.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,6 +74,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3CCC06D015AA823000C84BE1;
 			remoteInfo = "Xcode Templates";
+		};
+		3C2BFABF15AB34070011FA52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C2BFAAF15AB33020011FA52;
+			remoteInfo = TestService;
 		};
 		3C560D4315A9419800A05BC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -111,14 +126,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3C2BFABD15AB33CB0011FA52 /* Copy Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				3C2BFABE15AB33EF0011FA52 /* net.nevir.SMJobKitTests.TestService in Copy Services */,
+			);
+			name = "Copy Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3C2BFA8B15AB2EC00011FA52 /* SMJClientUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJClientUtility.h; sourceTree = "<group>"; };
+		3C2BFA8C15AB2EC00011FA52 /* SMJClientUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJClientUtility.m; sourceTree = "<group>"; };
+		3C2BFA8F15AB2F6D0011FA52 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		3C2BFA9315AB2FA50011FA52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3C2BFAAA15AB31390011FA52 /* SMJTestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJTestClient.h; sourceTree = "<group>"; };
+		3C2BFAAB15AB31390011FA52 /* SMJTestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJTestClient.m; sourceTree = "<group>"; };
+		3C2BFAB015AB33020011FA52 /* net.nevir.SMJobKitTests.TestService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = net.nevir.SMJobKitTests.TestService; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C2BFAB415AB33020011FA52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C2BFAB615AB33020011FA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C2BFAB715AB33020011FA52 /* Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
+		3C2BFAC115AB35070011FA52 /* TestService.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TestService.xcconfig; sourceTree = "<group>"; };
+		3C4C2B0115ABEC2B00775A8B /* SMJCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJCompatibility.h; sourceTree = "<group>"; };
+		3C4C2B0315ABEFAD00775A8B /* SMJError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJError.h; sourceTree = "<group>"; };
+		3C4C2B0415ABEFAD00775A8B /* SMJError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJError.m; sourceTree = "<group>"; };
+		3C4C2B0715ABF3AB00775A8B /* SMJErrorTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJErrorTypes.h; sourceTree = "<group>"; };
 		3C528CC715AA5B11000AB26E /* NSArrayInteropTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayInteropTests.m; sourceTree = "<group>"; };
 		3C52F29615AA68A7005A46A1 /* NSDictionaryInteropTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryInteropTests.m; sourceTree = "<group>"; };
 		3C560D2E15A9419800A05BC2 /* libSMJShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMJShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C560D2F15A9419800A05BC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		3C560D3215A9419800A05BC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		3C560D3315A9419800A05BC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		3C560D3415A9419800A05BC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C560D3715A9419800A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		3C560D4015A9419800A05BC2 /* SMJSharedTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMJSharedTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C560D5A15A941A300A05BC2 /* libSMJService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMJService.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +171,7 @@
 		3C560D8115A9428900A05BC2 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		3C560DAD15A9460E00A05BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C560DAE15A9460E00A05BC2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		3C560DAF15A9460E00A05BC2 /* SMJobKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJobKitTests.h; sourceTree = "<group>"; };
-		3C560DB015A9460E00A05BC2 /* SMJobKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJobKitTests.m; sourceTree = "<group>"; };
+		3C560DB015A9460E00A05BC2 /* SMJClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJClientTests.m; sourceTree = "<group>"; };
 		3C560DB215A9460E00A05BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C560DB315A9460E00A05BC2 /* SMJServiceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMJServiceTests.h; sourceTree = "<group>"; };
 		3C560DB415A9460E00A05BC2 /* SMJServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMJServiceTests.m; sourceTree = "<group>"; };
@@ -177,11 +216,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C2BFAAE15AB33020011FA52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C2BFAB215AB33020011FA52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C560D2B15A9419800A05BC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C560D8815A943D800A05BC2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C560D4515A9419800A05BC2 /* libSMJShared.a in Frameworks */,
-				3C560D8B15A9441100A05BC2 /* Foundation.framework in Frameworks */,
 				3C560D4115A9419800A05BC2 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C560DC215A9469A00A05BC2 /* libSMJShared.a in Frameworks */,
-				3C560D8715A943D100A05BC2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C560D8A15A9440500A05BC2 /* libSMJService.a in Frameworks */,
-				3C560D8915A943E800A05BC2 /* Foundation.framework in Frameworks */,
 				3C560D6815A941A300A05BC2 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +263,8 @@
 			files = (
 				3C560D8215A9435200A05BC2 /* libSMJShared.a in Frameworks */,
 				3CA150B015A93C5F001CF9F8 /* Foundation.framework in Frameworks */,
+				3C2BFA9015AB2F6D0011FA52 /* ServiceManagement.framework in Frameworks */,
+				3C2BFA9415AB2FA50011FA52 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +281,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C560D3115A9419800A05BC2 /* Other Frameworks */ = {
+		3C2BFA8815AB2E570011FA52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C560D3215A9419800A05BC2 /* AppKit.framework */,
-				3C560D3315A9419800A05BC2 /* CoreData.framework */,
-				3C560D3415A9419800A05BC2 /* Foundation.framework */,
+				3CA1507C15A91179001CF9F8 /* Info.plist */,
+				3CA1508015A91179001CF9F8 /* Prefix.pch */,
 			);
-			name = "Other Frameworks";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C2BFA8915AB2E870011FA52 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1508115A91179001CF9F8 /* SMJobKit.h */,
+				3CA150AC15A93C3A001CF9F8 /* SMJClient.h */,
+				3CA150AD15A93C3A001CF9F8 /* SMJClient.m */,
+				3C4C2B0715ABF3AB00775A8B /* SMJErrorTypes.h */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		3C2BFA8A15AB2E8F0011FA52 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				3C2BFA8B15AB2EC00011FA52 /* SMJClientUtility.h */,
+				3C2BFA8C15AB2EC00011FA52 /* SMJClientUtility.m */,
+				3C4C2B0315ABEFAD00775A8B /* SMJError.h */,
+				3C4C2B0415ABEFAD00775A8B /* SMJError.m */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		3C2BFAA615AB30C70011FA52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C560DB615A9460E00A05BC2 /* Info.plist */,
+				3C560DBE15A9468200A05BC2 /* Prefix.pch */,
+				3C560DE915AA3DD700A05BC2 /* TestHelpers.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C2BFAA715AB30DD0011FA52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C560DB215A9460E00A05BC2 /* Info.plist */,
+				3C560DBC15A9467A00A05BC2 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C2BFAA815AB30EB0011FA52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C560DAD15A9460E00A05BC2 /* Info.plist */,
+				3C560DAE15A9460E00A05BC2 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C2BFAA915AB31240011FA52 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				3C2BFAAA15AB31390011FA52 /* SMJTestClient.h */,
+				3C2BFAAB15AB31390011FA52 /* SMJTestClient.m */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		3C2BFAB315AB33020011FA52 /* TestService */ = {
+			isa = PBXGroup;
+			children = (
+				3C2BFAB415AB33020011FA52 /* main.m */,
+				3C2BFAB615AB33020011FA52 /* Info.plist */,
+				3C2BFAB715AB33020011FA52 /* Launchd.plist */,
+			);
+			path = TestService;
 			sourceTree = "<group>";
 		};
 		3C560D3515A9419800A05BC2 /* SMJShared */ = {
@@ -260,6 +373,7 @@
 				3C560DD915A952BE00A05BC2 /* NSObject+XPCInterop.m */,
 				3C560DCC15A9480300A05BC2 /* NSString+XPCInterop.h */,
 				3C560DCD15A9480300A05BC2 /* NSString+XPCInterop.m */,
+				3C4C2B0115ABEC2B00775A8B /* SMJCompatibility.h */,
 				3C560DEA15AA4E0600A05BC2 /* SMJDiagnostics.h */,
 				3C560DEB15AA4E0600A05BC2 /* SMJDiagnostics.m */,
 			);
@@ -290,6 +404,7 @@
 				3C560DAC15A9460E00A05BC2 /* SMJobKitTests */,
 				3C560DB115A9460E00A05BC2 /* SMJServiceTests */,
 				3C560DB515A9460E00A05BC2 /* SMJSharedTests */,
+				3C2BFAB315AB33020011FA52 /* TestService */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -297,10 +412,9 @@
 		3C560DAC15A9460E00A05BC2 /* SMJobKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C560DAD15A9460E00A05BC2 /* Info.plist */,
-				3C560DAE15A9460E00A05BC2 /* Prefix.pch */,
-				3C560DAF15A9460E00A05BC2 /* SMJobKitTests.h */,
-				3C560DB015A9460E00A05BC2 /* SMJobKitTests.m */,
+				3C560DB015A9460E00A05BC2 /* SMJClientTests.m */,
+				3C2BFAA915AB31240011FA52 /* Fixtures */,
+				3C2BFAA815AB30EB0011FA52 /* Supporting Files */,
 			);
 			path = SMJobKitTests;
 			sourceTree = "<group>";
@@ -308,10 +422,9 @@
 		3C560DB115A9460E00A05BC2 /* SMJServiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C560DB215A9460E00A05BC2 /* Info.plist */,
-				3C560DBC15A9467A00A05BC2 /* Prefix.pch */,
 				3C560DB315A9460E00A05BC2 /* SMJServiceTests.h */,
 				3C560DB415A9460E00A05BC2 /* SMJServiceTests.m */,
+				3C2BFAA715AB30DD0011FA52 /* Supporting Files */,
 			);
 			path = SMJServiceTests;
 			sourceTree = "<group>";
@@ -319,13 +432,11 @@
 		3C560DB515A9460E00A05BC2 /* SMJSharedTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C560DB615A9460E00A05BC2 /* Info.plist */,
-				3C560DBE15A9468200A05BC2 /* Prefix.pch */,
-				3C560DE915AA3DD700A05BC2 /* TestHelpers.h */,
 				3C528CC715AA5B11000AB26E /* NSArrayInteropTests.m */,
 				3C52F29615AA68A7005A46A1 /* NSDictionaryInteropTests.m */,
 				3C560DD115A94A4B00A05BC2 /* NSStringInteropTests.m */,
 				3C560DE515AA304300A05BC2 /* NSNumberInteropTests.m */,
+				3C2BFAA615AB30C70011FA52 /* Supporting Files */,
 			);
 			path = SMJSharedTests;
 			sourceTree = "<group>";
@@ -355,6 +466,7 @@
 				3C560D4015A9419800A05BC2 /* SMJSharedTests.octest */,
 				3C560D5A15A941A300A05BC2 /* libSMJService.a */,
 				3C560D6715A941A300A05BC2 /* SMJServiceTests.octest */,
+				3C2BFAB015AB33020011FA52 /* net.nevir.SMJobKitTests.TestService */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,9 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				3CA1507915A91179001CF9F8 /* Foundation.framework */,
+				3C2BFA9315AB2FA50011FA52 /* Security.framework */,
 				3CA1508A15A91179001CF9F8 /* SenTestingKit.framework */,
-				3C560D2F15A9419800A05BC2 /* Cocoa.framework */,
-				3C560D3115A9419800A05BC2 /* Other Frameworks */,
+				3C2BFA8F15AB2F6D0011FA52 /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -373,21 +485,11 @@
 		3CA1507A15A91179001CF9F8 /* SMJobKit */ = {
 			isa = PBXGroup;
 			children = (
-				3CA1507C15A91179001CF9F8 /* Info.plist */,
-				3CA1508015A91179001CF9F8 /* Prefix.pch */,
-				3CA1508115A91179001CF9F8 /* SMJobKit.h */,
-				3CA150AC15A93C3A001CF9F8 /* SMJClient.h */,
-				3CA150AD15A93C3A001CF9F8 /* SMJClient.m */,
-				3CA1507B15A91179001CF9F8 /* Supporting Files */,
+				3C2BFA8915AB2E870011FA52 /* Public */,
+				3C2BFA8A15AB2E8F0011FA52 /* Private */,
+				3C2BFA8815AB2E570011FA52 /* Supporting Files */,
 			);
 			path = SMJobKit;
-			sourceTree = "<group>";
-		};
-		3CA1507B15A91179001CF9F8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3CA150A315A91267001CF9F8 /* Configuration */ = {
@@ -400,6 +502,7 @@
 				3CA150A715A91267001CF9F8 /* SMJobKit.xcconfig */,
 				3C560D7C15A9422400A05BC2 /* SMJService.xcconfig */,
 				3C560D7E15A9422400A05BC2 /* SMJShared.xcconfig */,
+				3C2BFAC115AB35070011FA52 /* TestService.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -436,6 +539,7 @@
 				3C560DD615A952B100A05BC2 /* NSNumber+XPCInterop.h in Headers */,
 				3C560DDA15A952BE00A05BC2 /* NSObject+XPCInterop.h in Headers */,
 				3C560DCE15A9480300A05BC2 /* NSString+XPCInterop.h in Headers */,
+				3C4C2B0215ABEC2B00775A8B /* SMJCompatibility.h in Headers */,
 				3C560DEC15AA4E0700A05BC2 /* SMJDiagnostics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,12 +557,32 @@
 			files = (
 				3C560D8515A9436900A05BC2 /* SMJobKit.h in Headers */,
 				3C560D8615A9436B00A05BC2 /* SMJClient.h in Headers */,
+				3C4C2B0815ABF3AB00775A8B /* SMJErrorTypes.h in Headers */,
+				3C2BFA8D15AB2EC00011FA52 /* SMJClientUtility.h in Headers */,
+				3C4C2B0515ABEFAD00775A8B /* SMJError.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3C2BFAAF15AB33020011FA52 /* TestService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C2BFAB815AB33020011FA52 /* Build configuration list for PBXNativeTarget "TestService" */;
+			buildPhases = (
+				3C2BFAAD15AB33020011FA52 /* Sources */,
+				3C4C2B0C15ABF89300775A8B /* Preprocess Info.plist */,
+				3C2BFAAE15AB33020011FA52 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestService;
+			productName = TestService;
+			productReference = 3C2BFAB015AB33020011FA52 /* net.nevir.SMJobKitTests.TestService */;
+			productType = "com.apple.product-type.tool";
+		};
 		3C560D2D15A9419800A05BC2 /* SMJShared */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C560D5315A9419800A05BC2 /* Build configuration list for PBXNativeTarget "SMJShared" */;
@@ -559,13 +683,14 @@
 			buildPhases = (
 				3CA1508415A91179001CF9F8 /* Sources */,
 				3CA1508515A91179001CF9F8 /* Frameworks */,
-				3CA1508615A91179001CF9F8 /* Resources */,
+				3C2BFABD15AB33CB0011FA52 /* Copy Services */,
 				3CA1508715A91179001CF9F8 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				3CA1508E15A91179001CF9F8 /* PBXTargetDependency */,
+				3C2BFAC015AB34070011FA52 /* PBXTargetDependency */,
 			);
 			name = SMJobKitTests;
 			productName = SMJobKitTests;
@@ -599,6 +724,7 @@
 				3CA1508815A91179001CF9F8 /* SMJobKitTests */,
 				3C560D6615A941A300A05BC2 /* SMJServiceTests */,
 				3C560D3F15A9419800A05BC2 /* SMJSharedTests */,
+				3C2BFAAF15AB33020011FA52 /* TestService */,
 				3CCC06D015AA823000C84BE1 /* Xcode Templates */,
 			);
 		};
@@ -626,16 +752,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CA1508615A91179001CF9F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C4C2B0C15ABF89300775A8B /* Preprocess Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Preprocess Info.plist";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/bin/env ruby";
+			shellScript = "require 'cgi'\nrequire 'fileutils'\n\nmissing_keys = ['BUILD_DIR', 'CODE_SIGN_IDENTITY', 'SMJ_SOURCE_INFO_PLIST_PATH', 'SMJ_PROCESSED_INFO_PLIST_PATH'] - ENV.keys\nraise \"Missing required ENV values: #{missing_keys.inspect}\" if missing_keys.size > 0\n\n\ndummy_path = \"#{ENV['BUILD_DIR']}/SMJobKitCodeSigningDummy\"\n\nidentity = ENV['CODE_SIGN_IDENTITY']\n# If you use the generic code signing identity, chances are that it'll conflict.\nidentity = \"#{identity}:\" if identity.end_with? ' Developer'\n\n# We can't seem to get direct access to the code signing certificate that Xcode has\n# selected at this point :(\n`touch #{dummy_path}`\n`codesign --force --sign \"#{identity}\" \"#{dummy_path}\"`\nresult = `codesign --display --verbose --verbose \"#{dummy_path}\" 2>&1`\n`rm #{dummy_path}`\n\nENV['CODE_SIGN_IDENTITY'] = result[/Authority\\=(.*#{Regexp.escape(identity)}.*)/, 1]\n\n# Now that we have the proper identity, we can set up the temporary plist\nopen(ENV['SMJ_SOURCE_INFO_PLIST_PATH']) do |input|\n  FileUtils.mkpath File.dirname(ENV['SMJ_PROCESSED_INFO_PLIST_PATH'])\n\n  open(ENV['SMJ_PROCESSED_INFO_PLIST_PATH'], 'w') do |output|\n    output.write input.read.gsub(/&lt;([A-Z_]+)&gt;/) { CGI.escapeHTML(ENV[$1]) }\n  end\nend\n";
+		};
 		3C560D3E15A9419800A05BC2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -691,6 +824,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C2BFAAD15AB33020011FA52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C2BFAB515AB33020011FA52 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C560D2A15A9419800A05BC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -736,6 +877,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA150AF15A93C3A001CF9F8 /* SMJClient.m in Sources */,
+				3C2BFA8E15AB2EC00011FA52 /* SMJClientUtility.m in Sources */,
+				3C4C2B0615ABEFAD00775A8B /* SMJError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,7 +886,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C560DB915A9461D00A05BC2 /* SMJobKitTests.m in Sources */,
+				3C560DB915A9461D00A05BC2 /* SMJClientTests.m in Sources */,
+				3C2BFAAC15AB31390011FA52 /* SMJTestClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +898,11 @@
 			isa = PBXTargetDependency;
 			target = 3CCC06D015AA823000C84BE1 /* Xcode Templates */;
 			targetProxy = 3C2BFA6E15AA95D20011FA52 /* PBXContainerItemProxy */;
+		};
+		3C2BFAC015AB34070011FA52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C2BFAAF15AB33020011FA52 /* TestService */;
+			targetProxy = 3C2BFABF15AB34070011FA52 /* PBXContainerItemProxy */;
 		};
 		3C560D4415A9419800A05BC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -788,6 +937,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3C2BFAB915AB33020011FA52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2BFAC115AB35070011FA52 /* TestService.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3C2BFABA15AB33020011FA52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2BFAC115AB35070011FA52 /* TestService.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
 		3C560D4F15A9419800A05BC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C560D7E15A9422400A05BC2 /* SMJShared.xcconfig */;
@@ -901,6 +1064,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C2BFAB815AB33020011FA52 /* Build configuration list for PBXNativeTarget "TestService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C2BFAB915AB33020011FA52 /* Debug */,
+				3C2BFABA15AB33020011FA52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3C560D5315A9419800A05BC2 /* Build configuration list for PBXNativeTarget "SMJShared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

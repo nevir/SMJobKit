@@ -1,3 +1,0 @@
-@interface SMJobKitTests : SenTestCase
-
-@end

@@ -1,1 +1,6 @@
 #import <Foundation/Foundation.h>
+#import <ServiceManagement/ServiceManagement.h>
+
+#import "SMJErrorTypes.h"
+
+#import "SMJError.h"

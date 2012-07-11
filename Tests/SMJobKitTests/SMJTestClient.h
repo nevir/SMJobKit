@@ -1,0 +1,3 @@
+@interface SMJTestClient : SMJClient
+
+@end

@@ -1,17 +1,31 @@
 #import "SMJClient.h"
 
+#import "SMJClientUtility.h"
+
+
+@interface SMJClient ()
+
+// Service Information
++ (NSString*) bundledServicePath;
++ (NSString*) installedServicePath;
+
+// Utility
++ (CFStringRef) cfIdentifier;
+
+@end
+
 @implementation SMJClient
 
 #pragma mark - Public Interface
 
 + (NSString*) bundledVersion
 {
-  return nil;
+  return [SMJClientUtility versionForBundlePath:self.bundledServicePath];
 }
 
 + (NSString*) installedVersion
 {
-  return nil;
+  return [SMJClientUtility versionForBundlePath:self.installedServicePath];
 }
 
 + (BOOL) installWithError:(NSError **)error
@@ -34,5 +48,28 @@
 }
 
 
+#pragma mark - Service Information
+
++ (NSString*) bundledServicePath
+{
+  NSString* helperRelative = [NSString stringWithFormat:@"Contents/Library/LaunchServices/%@", self.serviceIdentifier];
+  
+  return [[NSBundle bundleForClass:self].bundlePath stringByAppendingPathComponent:helperRelative];
+}
+
++ (NSString*) installedServicePath
+{
+  NSDictionary* jobData = (__bridge NSDictionary*)SMJobCopyDictionary(kSMDomainSystemLaunchd, self.cfIdentifier);
+  
+  return [[jobData objectForKey:@"ProgramArguments"] objectAtIndex:0];
+}
+
+
+#pragma mark - Utility
+
++ (CFStringRef) cfIdentifier
+{
+  return (__bridge CFStringRef)self.serviceIdentifier;
+}
 
 @end

@@ -32,7 +32,7 @@
   // xpc_array_create retains the input objects, so we need to clean up our temporary objects.
   for (NSUInteger i = 0; i < self.count; i++)
   {
-    xpc_release(objects[i]);
+    SAFE_XPC_RELEASE(objects[i]);
   }
   
   return result;
