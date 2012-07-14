@@ -37,10 +37,35 @@
   return [SMJClientUtility versionForBundlePath:[self installedServicePath]];
 }
 
-+ (BOOL) installWithError:(NSError **)error
++ (BOOL) installWithPrompt:(NSString*)prompt error:(NSError **)error
 {
-  return NO;
+  if ([self installedVersion] && [[self installedVersion] isEqualTo:[self bundledVersion]])
+  {
+    NSLog(@"%@ (%@) is already current, skipping install.", [self serviceIdentifier], [self bundledVersion]);
+    return YES;
+  }
+  
+  if ([self installedVersion])
+  {
+    if (![self uninstallWithError:error]) return NO;
+  }
+  
+  AuthorizationRef authRef = [SMJClientUtility authWithRight:kSMRightBlessPrivilegedHelper prompt:prompt error:error];
+  if (authRef == NULL) return NO;
+  
+  // Here's the good stuff
+  CFErrorRef cfError;
+  if (!SMJobBless(kSMDomainSystemLaunchd, [self cfIdentifier], authRef, &cfError))
+  {
+    NSError* blessError = (__bridge NSError*)cfError;
+    SET_ERROR(SMJErrorUnableToBless, @"SMJobBless Failure (code %d): %@", blessError.code, [blessError localizedDescription]);
+    return NO;
+  }
+  
+  NSLog(@"%@ (%@) installed successfully", [self serviceIdentifier], [self bundledVersion]);
+  return YES;
 }
+
 
 + (BOOL) uninstallWithError:(NSError **)error
 {

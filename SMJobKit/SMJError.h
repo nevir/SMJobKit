@@ -7,5 +7,7 @@
 #define SET_ERROR(code, messageFormat...)\
   if (error != NULL)\
   {\
-    *error = [SMJError errorWithCode:code message:[NSString stringWithFormat:messageFormat]];\
+    NSString* message = [NSString stringWithFormat:messageFormat];\
+    NSLog(@"[SMJKit Error] %@", message);\
+    *error = [SMJError errorWithCode:code message:message];\
   }\

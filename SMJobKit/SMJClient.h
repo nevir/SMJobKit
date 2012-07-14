@@ -11,7 +11,7 @@
 + (NSString*) bundledVersion;
 + (NSString*) installedVersion;
 
-+ (BOOL) installWithError:(NSError **)error;
++ (BOOL) installWithPrompt:(NSString*)prompt error:(NSError **)error;
 + (BOOL) uninstallWithError:(NSError **)error;
 
 // Diagnostics

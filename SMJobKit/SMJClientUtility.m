@@ -9,15 +9,7 @@
 
 + (NSString*) versionForBundlePath:(NSString*)bundlePath
 {
-  NSError*  error;
-  NSString* version = [self versionForBundlePath:bundlePath error:&error];
-  
-  if (!version) {
-    NSLog(@"Failed to retrieve version of %@: %@", bundlePath, error.localizedDescription);
-    return nil;
-  }
-  
-  return version;
+  return [self versionForBundlePath:bundlePath error:NULL];
 }
 
 + (NSString*) versionForBundlePath:(NSString*)bundlePath error:(NSError**)error
@@ -41,7 +33,7 @@
     }
     else
     {
-      SET_ERROR(SMJErrorCodeBadBundleSecurity, @"Failed to create SecStaticCodeRef (errno %d)", result);
+      SET_ERROR(SMJErrorCodeBadBundleSecurity, @"Failed to create SecStaticCodeRef (OSStatus %d)", result);
     }
     return nil;
   }
@@ -50,7 +42,7 @@
   result = SecCodeCopySigningInformation(codeRef, kSecCSDefaultFlags, &codeInfo);
   if (result != noErr)
   {
-    SET_ERROR(SMJErrorCodeBadBundleCodeSigningDictionary, @"Failed to read code signing dictionary (errno %d)", result);
+    SET_ERROR(SMJErrorCodeBadBundleCodeSigningDictionary, @"Failed to read code signing dictionary (OSStatus %d)", result);
     return nil;
   }
   
@@ -70,26 +62,21 @@
 
 #pragma mark - Authorization & Security
 
-+ (AuthorizationRef) authWithRight:(AuthorizationString)rightName prompt:(NSString*)prompt
++ (AuthorizationRef) authWithRight:(AuthorizationString)rightName prompt:(NSString*)prompt error:(NSError**)error
 {
   AuthorizationItem   authItem = {rightName, 0, NULL, 0};
   AuthorizationRights authRights = {1, &authItem};
   
-  AuthorizationEnvironment environment;
+  AuthorizationEnvironment environment = {0, NULL};
   
   if (prompt)
   {
     AuthorizationItem envItem = {
-      kAuthorizationEnvironmentPrompt, [prompt length], (void*)[prompt UTF8String], 0
+      kAuthorizationEnvironmentPrompt, prompt.length, (void*)prompt.UTF8String, 0
     };
     
     environment.count = 1;
     environment.items = &envItem;
-  }
-  else
-  {
-    environment.count = 0;
-    environment.items = NULL;
   }
   
   AuthorizationFlags flags =
@@ -97,18 +84,29 @@
   | kAuthorizationFlagInteractionAllowed
   | kAuthorizationFlagPreAuthorize
   | kAuthorizationFlagExtendRights;
-  
+
   AuthorizationRef authRef;
   OSStatus status = AuthorizationCreate(&authRights, &environment, flags, &authRef);
-  if (status != errAuthorizationSuccess)
+  if (status == errAuthorizationSuccess) return authRef;
+  
+  if (status == errAuthorizationDenied)
   {
-    NSLog(@"Failed to create AuthorizationRef, return code %i", status);
-    return NULL;
+    SET_ERROR(SMJAuthorizationDenied, @"The system denied the authorization request");
+  }
+  else if (status == errAuthorizationCanceled)
+  {
+    SET_ERROR(SMJAuthorizationCanceled, @"The user canceled the authorization request");
+  }
+  else if (status == errAuthorizationInteractionNotAllowed)
+  {
+    SET_ERROR(SMJAuthorizationInteractionNotAllowed, @"Not allowed to prompt the user for authorization");
   }
   else
   {
-    return authRef;
+    SET_ERROR(SMJAuthorizationFailed, @"Unknown failure when calling AuthorizationCreate (OSStatus %d)", status);
   }
+  
+  return NULL;
 }
 
 @end

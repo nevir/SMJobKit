@@ -6,7 +6,12 @@
 - (void) testBundledVersion
 {
   STAssertEqualObjects([SMJTestClient bundledVersion], @"0.01", @"Missing/wrong version");
-  STAssertEqualObjects([SMJMissingClient bundledVersion], nil, @"Missing client should return nil for version");
+  STAssertEqualObjects([SMJMissingClient bundledVersion], nil, @"Missing client should return nil");
+}
+
+- (void) testInstalledVersion
+{
+  STAssertEqualObjects([SMJTestClient installedVersion], nil, @"Missing client should return nil");
 }
 
 - (void) testForProblems

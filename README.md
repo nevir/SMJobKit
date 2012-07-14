@@ -28,6 +28,10 @@ sure everything is properly configured (and your code signing certificates are i
 want to review the [template's documentation](https://github.com/nevir/XMJobKit/tree/master/SMJobKit Service.xctemplate)
 for an in-depth explanation of what it is doing for you.
 
+Finally, you need to add a Copy Files build phase to your application target.  The destination
+should be "Wrapper" with a subpath of `Contents/Library/LaunchServices`.  Add the service's built
+product to the list.  Make sure you add a dependency on your service target!
+
 And, hopefully, that's all you need to do in order to configure your project!
 
 
