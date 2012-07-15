@@ -109,8 +109,8 @@
 			<dict>
 				<key>PRODUCT_NAME</key>
 				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PROJECT_NAME).$(TARGET_NAME)</string>
-        <key>PARENT_APPLICATION_IDENTIFIER</key>
-        <string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PROJECT_NAME)</string>
+				<key>PARENT_APPLICATION_IDENTIFIER</key>
+				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PROJECT_NAME)</string>
 				<key>SMJ_PREPROCESS_DIR</key>
 				<string>$(BUILD_DIR)/Preprocessed</string>
 				<key>SMJ_PREPROCESS_FILES</key>
@@ -192,8 +192,8 @@ end</string>
 	<key>Nodes</key>
 	<array>
 		<string>main.m</string>
-    <string>___PACKAGENAMEASIDENTIFIER___-Info.plist</string>
-    <string>___PACKAGENAMEASIDENTIFIER___-Launchd.plist</string>
+		<string>___PACKAGENAMEASIDENTIFIER___-Info.plist</string>
+		<string>___PACKAGENAMEASIDENTIFIER___-Launchd.plist</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -207,7 +207,7 @@ end</string>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___-Info.plist</string>
 		</dict>
-    <key>___PACKAGENAMEASIDENTIFIER___-Launchd.plist</key>
+		<key>___PACKAGENAMEASIDENTIFIER___-Launchd.plist</key>
 		<dict>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___-Launchd.plist</string>

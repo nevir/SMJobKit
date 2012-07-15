@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>net.nevir.SMJobKit.Application</string>
+	<key>InjectionTargets</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaApplication</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>includeSMJobKitService</string>
+			<key>Name</key>
+			<string>Include SMJobKit Service</string>
+			<key>SortOrder</key>
+			<integer>1</integer>
+			<key>Description</key>
+			<string>Whether the application should also bundle a SMJobKit-based system service.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>CODE_SIGN_IDENTITY</key>
+									<string>Mac Developer</string>
+									<key>SMJ_PREPROCESS_DIR</key>
+									<string>$(BUILD_DIR)/Preprocessed</string>
+									<key>SMJ_PREPROCESS_FILES</key>
+									<string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___-Info.plist</string>
+								</dict>
+								<key>BuildPhases</key>
+								<array>
+									<dict>
+										<key>Class</key>
+										<string>ShellScript</string>
+										<key>ShellPath</key>
+										<string>/usr/bin/env ruby</string>
+										<key>ShellScript</key>
+										<string># Generic preprocessing for ${ENV_VAR} with output to the build dir.
+
+require &apos;cgi&apos;
+require &apos;fileutils&apos;
+
+missing_keys = [&apos;BUILD_DIR&apos;, &apos;CODE_SIGN_IDENTITY&apos;, &apos;SMJ_PREPROCESS_FILES&apos;, &apos;SMJ_PREPROCESS_DIR&apos;] - ENV.keys
+raise &quot;Missing required ENV values: #{missing_keys.inspect}&quot; if missing_keys.size &gt; 0
+
+# SMJ_PREPROCESS_FILES is a comma-separated list of *relative* file paths to preprocess
+#  and spit out into the SMJ_PREPROCESS_DIR (w/ the same relative paths as given)
+files_to_preprocess = ENV[&apos;SMJ_PREPROCESS_FILES&apos;].split(&apos;,&apos;).map(&amp;:strip)
+
+
+# Environment Cleanup
+# -------------------
+dummy_path = &quot;#{ENV[&apos;BUILD_DIR&apos;]}/SMJobKitCodeSigningDummy&quot;
+
+identity = ENV[&apos;CODE_SIGN_IDENTITY&apos;]
+# If you use the generic code signing identity, chances are that it&apos;ll conflict.
+identity = &quot;#{identity}:&quot; if identity.end_with? &apos; Developer&apos;
+
+# We can&apos;t seem to get direct access to the code signing certificate that Xcode has
+# selected at this point :(
+`touch #{dummy_path}`
+`codesign --force --sign &quot;#{identity}&quot; &quot;#{dummy_path}&quot;`
+result = `codesign --display --verbose --verbose &quot;#{dummy_path}&quot; 2&gt;&amp;1`
+`rm #{dummy_path}`
+
+ENV[&apos;CODE_SIGN_IDENTITY&apos;] = result[/Authority\=(.*#{Regexp.escape(identity)}.*)/, 1]
+
+
+# Actual Preprocessing
+# --------------------
+
+files_to_preprocess.each do |path|
+  target_path = File.join(ENV[&apos;SMJ_PREPROCESS_DIR&apos;], path)
+  FileUtils.mkpath File.dirname(target_path)
+
+  open(path) do |input|
+    open(target_path, &apos;w&apos;) do |output|
+      # Specify macros via ${VAR_NAME} in the preprocessed file.  Same as regular
+      # Info.plist preprocessing.
+      output.write input.read.gsub(/\$\{([A-Z_]+)\}/) { CGI.escapeHTML(ENV[$1]) }
+    end
+    puts target_path
+  end
+end</string>
+									</dict>
+								</array>
+								<key>Frameworks</key>
+								<array>
+									<string>SMJobKit</string>
+								</array>
+							</dict>
+						</array>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>net.nevir.SMJobKit.Service</string>
+								<key>Name</key>
+								<string>___VARIABLE_smjServiceName:RFC1034Identifier___</string>
+								<key>Dependents</key>
+								<array>
+									<string>0</string>
+								</array>
+							</dict>
+						</array>
+						<key>Nodes</key>
+						<array>
+							<string>README-SMJobKit.md</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>README-SMJobKit.md</key>
+							<dict>
+								<key>Path</key>
+								<string>README-SMJobKit.md</string>
+							</dict>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>smjServiceName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Service Name</string>
+			<key>SortOrder</key>
+			<integer>2</integer>
+			<key>Description</key>
+			<string>The SMJobKit service&apos;s base name</string>
+			<key>EmptyReplacement</key>
+			<string>___PACKAGENAME___Service</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>includeSMJobKitService</key>
+				<string>true</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>smjServiceBundleIdentifier</string>
+			<key>Name</key>
+			<string>Service Identifier</string>
+			<key>SortOrder</key>
+			<integer>2</integer>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Your new service&apos;s bundle and launchd identifier</string>
+			<key>Default</key>
+			<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.___VARIABLE_smjServiceName:RFC1034Identifier___</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>includeSMJobKitService</key>
+				<string>true</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
