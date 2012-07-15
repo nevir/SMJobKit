@@ -1,7 +1,7 @@
 // SMJobKit
 // ========
-SMJ_SOURCE_INFO_PLIST_PATH    = Tests/TestService/Info.plist
-SMJ_PROCESSED_INFO_PLIST_PATH = $(BUILD_DIR)/Tests/TestService/Info.plist
+SMJ_PREPROCESS_FILES = Tests/TestService/Info.plist, Tests/TestService/Launchd.plist
+SMJ_PREPROCESS_DIR   = $(BUILD_DIR)/Preprocessed
 
 // Code Signing
 // ============
@@ -9,7 +9,7 @@ CODE_SIGN_IDENTITY = Mac Developer
 
 // Linking
 // =======
-OTHER_LDFLAGS = -sectcreate __TEXT __info_plist "$SMJ_PROCESSED_INFO_PLIST_PATH" -sectcreate __TEXT __launchd_plist "Tests/TestService/Launchd.plist"
+OTHER_LDFLAGS = -sectcreate __TEXT __info_plist "$(SMJ_PREPROCESS_DIR)/Tests/TestService/Info.plist" -sectcreate __TEXT __launchd_plist "$(SMJ_PREPROCESS_DIR)/Tests/TestService/Launchd.plist"
 
 // Packaging
 // =========

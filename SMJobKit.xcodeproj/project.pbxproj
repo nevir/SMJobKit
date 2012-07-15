@@ -575,8 +575,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C2BFAB815AB33020011FA52 /* Build configuration list for PBXNativeTarget "TestService" */;
 			buildPhases = (
+				3C4C2B0C15ABF89300775A8B /* Preprocess Files */,
 				3C2BFAAD15AB33020011FA52 /* Sources */,
-				3C4C2B0C15ABF89300775A8B /* Preprocess Info.plist */,
 				3C2BFAAE15AB33020011FA52 /* Frameworks */,
 			);
 			buildRules = (
@@ -760,19 +760,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C4C2B0C15ABF89300775A8B /* Preprocess Info.plist */ = {
+		3C4C2B0C15ABF89300775A8B /* Preprocess Files */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Preprocess Info.plist";
+			name = "Preprocess Files";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/usr/bin/env ruby";
-			shellScript = "require 'cgi'\nrequire 'fileutils'\n\nmissing_keys = ['BUILD_DIR', 'CODE_SIGN_IDENTITY', 'SMJ_SOURCE_INFO_PLIST_PATH', 'SMJ_PROCESSED_INFO_PLIST_PATH'] - ENV.keys\nraise \"Missing required ENV values: #{missing_keys.inspect}\" if missing_keys.size > 0\n\n\ndummy_path = \"#{ENV['BUILD_DIR']}/SMJobKitCodeSigningDummy\"\n\nidentity = ENV['CODE_SIGN_IDENTITY']\n# If you use the generic code signing identity, chances are that it'll conflict.\nidentity = \"#{identity}:\" if identity.end_with? ' Developer'\n\n# We can't seem to get direct access to the code signing certificate that Xcode has\n# selected at this point :(\n`touch #{dummy_path}`\n`codesign --force --sign \"#{identity}\" \"#{dummy_path}\"`\nresult = `codesign --display --verbose --verbose \"#{dummy_path}\" 2>&1`\n`rm #{dummy_path}`\n\nENV['CODE_SIGN_IDENTITY'] = result[/Authority\\=(.*#{Regexp.escape(identity)}.*)/, 1]\n\n# Now that we have the proper identity, we can set up the temporary plist\nopen(ENV['SMJ_SOURCE_INFO_PLIST_PATH']) do |input|\n  FileUtils.mkpath File.dirname(ENV['SMJ_PROCESSED_INFO_PLIST_PATH'])\n\n  open(ENV['SMJ_PROCESSED_INFO_PLIST_PATH'], 'w') do |output|\n    output.write input.read.gsub(/&lt;([A-Z_]+)&gt;/) { CGI.escapeHTML(ENV[$1]) }\n  end\nend\n";
+			shellScript = "require 'cgi'\nrequire 'fileutils'\n\nmissing_keys = ['BUILD_DIR', 'CODE_SIGN_IDENTITY', 'SMJ_PREPROCESS_FILES', 'SMJ_PREPROCESS_DIR'] - ENV.keys\nraise \"Missing required ENV values: #{missing_keys.inspect}\" if missing_keys.size > 0\n\n# SMJ_PREPROCESS_FILES is a comma-separated list of *relative* file paths to preprocess\n#  and spit out into the SMJ_PREPROCESS_DIR (w/ the same relative paths as given)\nfiles_to_preprocess = ENV['SMJ_PREPROCESS_FILES'].split(',').map(&:strip)\n\n\n# Environment Cleanup\n# -------------------\ndummy_path = \"#{ENV['BUILD_DIR']}/SMJobKitCodeSigningDummy\"\n\nidentity = ENV['CODE_SIGN_IDENTITY']\n# If you use the generic code signing identity, chances are that it'll conflict.\nidentity = \"#{identity}:\" if identity.end_with? ' Developer'\n\n# We can't seem to get direct access to the code signing certificate that Xcode has\n# selected at this point :(\n`touch #{dummy_path}`\n`codesign --force --sign \"#{identity}\" \"#{dummy_path}\"`\nresult = `codesign --display --verbose --verbose \"#{dummy_path}\" 2>&1`\n`rm #{dummy_path}`\n\nENV['CODE_SIGN_IDENTITY'] = result[/Authority\\=(.*#{Regexp.escape(identity)}.*)/, 1]\n\n\n# Actual Preprocessing\n# --------------------\n\nfiles_to_preprocess.each do |path|\n  target_path = File.join(ENV['SMJ_PREPROCESS_DIR'], path)\n  FileUtils.mkpath File.dirname(target_path)\n\n  open(path) do |input|\n    open(target_path, 'w') do |output|\n      # Specify macros via ${VAR_NAME} in the preprocessed file.  Same as regular\n      # Info.plist preprocessing.\n      output.write input.read.gsub(/\\$\\{([A-Z_]+)\\}/) { CGI.escapeHTML(ENV[$1]) }\n    end\n    puts target_path\n  end\nend\n";
 		};
 		3C560D3E15A9419800A05BC2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
