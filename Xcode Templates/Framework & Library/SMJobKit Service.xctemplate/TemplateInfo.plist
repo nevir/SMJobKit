@@ -109,6 +109,8 @@
 			<dict>
 				<key>PRODUCT_NAME</key>
 				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PROJECT_NAME).$(TARGET_NAME)</string>
+        <key>PARENT_APPLICATION_IDENTIFIER</key>
+        <string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PROJECT_NAME)</string>
 				<key>SMJ_PREPROCESS_DIR</key>
 				<string>$(BUILD_DIR)/Preprocessed</string>
 				<key>SMJ_PREPROCESS_FILES</key>
