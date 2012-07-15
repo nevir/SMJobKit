@@ -118,13 +118,6 @@
 			remoteGlobalIDString = 3CA1507015A91179001CF9F8;
 			remoteInfo = SMJobKit;
 		};
-		3CCC07B015AA953C00C84BE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3CA1506715A91179001CF9F8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3CCC06D015AA823000C84BE1;
-			remoteInfo = "Xcode Templates";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -702,7 +695,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3CCC07B115AA953C00C84BE1 /* PBXTargetDependency */,
 				3C560D8415A9435800A05BC2 /* PBXTargetDependency */,
 			);
 			name = SMJobKit;
@@ -963,11 +955,6 @@
 			isa = PBXTargetDependency;
 			target = 3CA1507015A91179001CF9F8 /* SMJobKit */;
 			targetProxy = 3CA1508D15A91179001CF9F8 /* PBXContainerItemProxy */;
-		};
-		3CCC07B115AA953C00C84BE1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3CCC06D015AA823000C84BE1 /* Xcode Templates */;
-			targetProxy = 3CCC07B015AA953C00C84BE1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
