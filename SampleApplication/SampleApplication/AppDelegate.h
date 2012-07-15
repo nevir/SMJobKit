@@ -9,6 +9,7 @@
 @property (weak) IBOutlet NSTextField* installedVersionLabel;
 
 - (IBAction) installService:(id)sender;
+- (IBAction)uninstallService:(id)sender;
 
 - (void) updateStatus;
 - (void) appendMessage:(id)message;

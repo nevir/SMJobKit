@@ -23,6 +23,30 @@
   {
     [self appendMessage:error];
   }
+  else
+  {
+    [self appendMessage:@"Successfully installed SampleService"];
+  }
+  
+  [self updateStatus];
+}
+
+- (IBAction)uninstallService:(id)sender
+{
+  NSError* error;
+  // In order to test out SMJobKit,
+  // SampleApplication is trying to install a new
+  // helper tool.  Type your password to allow this.
+  if (![SampleService uninstallWithPrompt:@"In order to test out SMJobKit," error:&error])
+  {
+    [self appendMessage:error];
+  }
+  else
+  {
+    [self appendMessage:@"Successfully uninstalled SampleService"];
+  }
+  
+  [self updateStatus];
 }
 
 - (void) updateStatus

@@ -47,7 +47,7 @@
   
   if ([self installedVersion])
   {
-    if (![self uninstallWithError:error]) return NO;
+    if (![self uninstallWithPrompt:prompt error:error]) return NO;
   }
   
   AuthorizationRef authRef = [SMJClientUtility authWithRight:kSMRightBlessPrivilegedHelper prompt:prompt error:error];
@@ -58,7 +58,7 @@
   if (!SMJobBless(kSMDomainSystemLaunchd, [self cfIdentifier], authRef, &cfError))
   {
     NSError* blessError = (__bridge NSError*)cfError;
-    SET_ERROR(SMJErrorUnableToBless, @"SMJobBless Failure (code %d): %@", blessError.code, [blessError localizedDescription]);
+    SET_ERROR(SMJErrorUnableToBless, @"SMJobBless Failure (code %ld): %@", blessError.code, blessError.localizedDescription);
     return NO;
   }
   
@@ -67,9 +67,27 @@
 }
 
 
-+ (BOOL) uninstallWithError:(NSError **)error
++ (BOOL) uninstallWithPrompt:(NSString*)prompt error:(NSError **)error
 {
-  return NO;
+  if (![self installedVersion])
+  {
+    NSLog(@"%@ is not installed, skipping uninstall.", [self serviceIdentifier]);
+    return YES;
+  }
+  
+  AuthorizationRef authRef = [SMJClientUtility authWithRight:kSMRightModifySystemDaemons prompt:prompt error:error];
+  if (authRef == NULL) return NO;
+  
+  CFErrorRef cfError;
+  if (!SMJobRemove(kSMDomainSystemLaunchd, self.cfIdentifier, authRef, YES, &cfError))
+  {
+    NSError* removeError = (__bridge NSError*)cfError;
+    SET_ERROR(SMJErrorUnableToBless, @"SMJobRemove Failure (code %ld): %@", removeError.code, removeError.localizedDescription);
+    return NO;
+  }
+  
+  NSLog(@"%@ uninstalled successfully", [self serviceIdentifier]);
+  return YES;
 }
 
 

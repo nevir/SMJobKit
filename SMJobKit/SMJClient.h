@@ -12,7 +12,7 @@
 + (NSString*) installedVersion;
 
 + (BOOL) installWithPrompt:(NSString*)prompt error:(NSError **)error;
-+ (BOOL) uninstallWithError:(NSError **)error;
++ (BOOL) uninstallWithPrompt:(NSString*)prompt error:(NSError **)error;
 
 // Diagnostics
 
