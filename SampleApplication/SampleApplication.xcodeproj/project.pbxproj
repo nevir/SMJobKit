@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C4CFDC215B249C80089B20E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C75ECFF15AD42360041240E /* Foundation.framework */; };
-		3C4CFDC515B249C80089B20E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4CFDC415B249C80089B20E /* main.m */; };
 		3C75ECDB15AD414A0041240E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C75ECDA15AD414A0041240E /* Cocoa.framework */; };
 		3C75ECE515AD414A0041240E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C75ECE315AD414A0041240E /* InfoPlist.strings */; };
 		3C75ECE715AD414A0041240E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C75ECE615AD414A0041240E /* main.m */; };
@@ -17,15 +15,17 @@
 		3C75ECF115AD414A0041240E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C75ECEF15AD414A0041240E /* MainMenu.xib */; };
 		3C75ECF815AD421E0041240E /* SMJobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C75ECF715AD421E0041240E /* SMJobKit.framework */; };
 		3C75ED0D15AD43420041240E /* SampleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C75ED0C15AD43420041240E /* SampleService.m */; };
-		3CD9BC9415B24A2600F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService in Copy Services */ = {isa = PBXBuildFile; fileRef = 3C4CFDC015B249C80089B20E /* net.nevir.SMJobKit.SampleApplication.SampleService */; };
+		3CD9BCB115B252CC00F0007B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C75ECFF15AD42360041240E /* Foundation.framework */; };
+		3CD9BCB415B252CC00F0007B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD9BCB315B252CC00F0007B /* main.m */; };
+		3CD9BCBC15B252DF00F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService in Copy Services */ = {isa = PBXBuildFile; fileRef = 3CD9BCAF15B252CC00F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CD9BC9115B24A1F00F0007B /* PBXContainerItemProxy */ = {
+		3CD9BCBA15B252DB00F0007B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C75ECCD15AD414A0041240E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3C4CFDBF15B249C80089B20E;
+			remoteGlobalIDString = 3CD9BCAE15B252CC00F0007B;
 			remoteInfo = SampleService;
 		};
 /* End PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolderSpec = 1;
 			files = (
-				3CD9BC9415B24A2600F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService in Copy Services */,
+				3CD9BCBC15B252DF00F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService in Copy Services */,
 			);
 			name = "Copy Services";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,10 +45,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C4CFDC015B249C80089B20E /* net.nevir.SMJobKit.SampleApplication.SampleService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = net.nevir.SMJobKit.SampleApplication.SampleService; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C4CFDC415B249C80089B20E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3C4CFDC615B249C80089B20E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C4CFDC715B249C80089B20E /* Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
 		3C75ECD615AD414A0041240E /* SampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C75ECDA15AD414A0041240E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3C75ECDD15AD414A0041240E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -66,17 +62,13 @@
 		3C75ECFF15AD42360041240E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		3C75ED0B15AD43420041240E /* SampleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleService.h; sourceTree = "<group>"; };
 		3C75ED0C15AD43420041240E /* SampleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleService.m; sourceTree = "<group>"; };
+		3CD9BCAF15B252CC00F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = net.nevir.SMJobKit.SampleApplication.SampleService; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD9BCB315B252CC00F0007B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CD9BCB515B252CC00F0007B /* SampleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleService-Info.plist"; sourceTree = "<group>"; };
+		3CD9BCB615B252CC00F0007B /* SampleService-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleService-Launchd.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3C4CFDBE15B249C80089B20E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C4CFDC215B249C80089B20E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3C75ECD315AD414A0041240E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,24 +78,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CD9BCAD15B252CC00F0007B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD9BCB115B252CC00F0007B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C4CFDC315B249C80089B20E /* SampleService */ = {
-			isa = PBXGroup;
-			children = (
-				3C4CFDC415B249C80089B20E /* main.m */,
-				3C4CFDC615B249C80089B20E /* Info.plist */,
-				3C4CFDC715B249C80089B20E /* Launchd.plist */,
-			);
-			path = SampleService;
-			sourceTree = "<group>";
-		};
 		3C75ECCB15AD414A0041240E = {
 			isa = PBXGroup;
 			children = (
 				3C75ECE015AD414A0041240E /* SampleApplication */,
-				3C4CFDC315B249C80089B20E /* SampleService */,
+				3CD9BCB215B252CC00F0007B /* SampleService */,
 				3C75ECD915AD414A0041240E /* Frameworks */,
 				3C75ECD715AD414A0041240E /* Products */,
 			);
@@ -113,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				3C75ECD615AD414A0041240E /* SampleApplication.app */,
-				3C4CFDC015B249C80089B20E /* net.nevir.SMJobKit.SampleApplication.SampleService */,
+				3CD9BCAF15B252CC00F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,26 +154,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3CD9BCB215B252CC00F0007B /* SampleService */ = {
+			isa = PBXGroup;
+			children = (
+				3CD9BCB315B252CC00F0007B /* main.m */,
+				3CD9BCB515B252CC00F0007B /* SampleService-Info.plist */,
+				3CD9BCB615B252CC00F0007B /* SampleService-Launchd.plist */,
+			);
+			path = SampleService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3C4CFDBF15B249C80089B20E /* SampleService */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C4CFDC815B249C80089B20E /* Build configuration list for PBXNativeTarget "SampleService" */;
-			buildPhases = (
-				3C4CFDBC15B249C80089B20E /* ShellScript */,
-				3C4CFDBD15B249C80089B20E /* Sources */,
-				3C4CFDBE15B249C80089B20E /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SampleService;
-			productName = SampleService;
-			productReference = 3C4CFDC015B249C80089B20E /* net.nevir.SMJobKit.SampleApplication.SampleService */;
-			productType = "com.apple.product-type.tool";
-		};
 		3C75ECD515AD414A0041240E /* SampleApplication */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C75ECF415AD414A0041240E /* Build configuration list for PBXNativeTarget "SampleApplication" */;
@@ -196,12 +179,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				3CD9BC9215B24A1F00F0007B /* PBXTargetDependency */,
+				3CD9BCBB15B252DB00F0007B /* PBXTargetDependency */,
 			);
 			name = SampleApplication;
 			productName = SampleApplication;
 			productReference = 3C75ECD615AD414A0041240E /* SampleApplication.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3CD9BCAE15B252CC00F0007B /* SampleService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD9BCB715B252CC00F0007B /* Build configuration list for PBXNativeTarget "SampleService" */;
+			buildPhases = (
+				3CD9BCAB15B252CC00F0007B /* ShellScript */,
+				3CD9BCAC15B252CC00F0007B /* Sources */,
+				3CD9BCAD15B252CC00F0007B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleService;
+			productName = SampleService;
+			productReference = 3CD9BCAF15B252CC00F0007B /* net.nevir.SMJobKit.SampleApplication.SampleService */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,7 +224,7 @@
 			projectRoot = "";
 			targets = (
 				3C75ECD515AD414A0041240E /* SampleApplication */,
-				3C4CFDBF15B249C80089B20E /* SampleService */,
+				3CD9BCAE15B252CC00F0007B /* SampleService */,
 			);
 		};
 /* End PBXProject section */
@@ -243,7 +243,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C4CFDBC15B249C80089B20E /* ShellScript */ = {
+		3CD9BCAB15B252CC00F0007B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,14 +259,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3C4CFDBD15B249C80089B20E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C4CFDC515B249C80089B20E /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3C75ECD215AD414A0041240E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,13 +269,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CD9BCAC15B252CC00F0007B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD9BCB415B252CC00F0007B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CD9BC9215B24A1F00F0007B /* PBXTargetDependency */ = {
+		3CD9BCBB15B252DB00F0007B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3C4CFDBF15B249C80089B20E /* SampleService */;
-			targetProxy = 3CD9BC9115B24A1F00F0007B /* PBXContainerItemProxy */;
+			target = 3CD9BCAE15B252CC00F0007B /* SampleService */;
+			targetProxy = 3CD9BCBA15B252DB00F0007B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -315,44 +315,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3C4CFDC915B249C80089B20E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-sectcreate",
-					__TEXT,
-					__info_plist,
-					"\"$(SMJ_PREPROCESS_DIR)/SampleService/Info.plist\"",
-					"-sectcreate",
-					__TEXT,
-					__launchd_plist,
-					"\"$(SMJ_PREPROCESS_DIR)/SampleService/Launchd.plist\"",
-				);
-				PRODUCT_NAME = "net.nevir.SMJobKit.$(PROJECT_NAME).$(TARGET_NAME)";
-				SMJ_PREPROCESS_DIR = "$(BUILD_DIR)/Preprocessed";
-				SMJ_PREPROCESS_FILES = "SampleService/Info.plist, SampleService/Launchd.plist";
-			};
-			name = Debug;
-		};
-		3C4CFDCA15B249C80089B20E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-sectcreate",
-					__TEXT,
-					__info_plist,
-					"\"$(SMJ_PREPROCESS_DIR)/SampleService/Info.plist\"",
-					"-sectcreate",
-					__TEXT,
-					__launchd_plist,
-					"\"$(SMJ_PREPROCESS_DIR)/SampleService/Launchd.plist\"",
-				);
-				PRODUCT_NAME = "net.nevir.SMJobKit.$(PROJECT_NAME).$(TARGET_NAME)";
-				SMJ_PREPROCESS_DIR = "$(BUILD_DIR)/Preprocessed";
-				SMJ_PREPROCESS_FILES = "SampleService/Info.plist, SampleService/Launchd.plist";
-			};
-			name = Release;
-		};
 		3C75ECF215AD414A0041240E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -436,18 +398,47 @@
 			};
 			name = Release;
 		};
+		3CD9BCB815B252CC00F0007B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SMJ_PREPROCESS_DIR)/SampleService/SampleService-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SMJ_PREPROCESS_DIR)/SampleService/SampleService-Launchd.plist\"",
+				);
+				PRODUCT_NAME = "net.nevir.SMJobKit.$(PROJECT_NAME).$(TARGET_NAME)";
+				SMJ_PREPROCESS_DIR = "$(BUILD_DIR)/Preprocessed";
+				SMJ_PREPROCESS_FILES = "SampleService/SampleService-Info.plist, SampleService/SampleService-Launchd.plist";
+			};
+			name = Debug;
+		};
+		3CD9BCB915B252CC00F0007B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SMJ_PREPROCESS_DIR)/SampleService/SampleService-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SMJ_PREPROCESS_DIR)/SampleService/SampleService-Launchd.plist\"",
+				);
+				PRODUCT_NAME = "net.nevir.SMJobKit.$(PROJECT_NAME).$(TARGET_NAME)";
+				SMJ_PREPROCESS_DIR = "$(BUILD_DIR)/Preprocessed";
+				SMJ_PREPROCESS_FILES = "SampleService/SampleService-Info.plist, SampleService/SampleService-Launchd.plist";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3C4CFDC815B249C80089B20E /* Build configuration list for PBXNativeTarget "SampleService" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C4CFDC915B249C80089B20E /* Debug */,
-				3C4CFDCA15B249C80089B20E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3C75ECD015AD414A0041240E /* Build configuration list for PBXProject "SampleApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -465,6 +456,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3CD9BCB715B252CC00F0007B /* Build configuration list for PBXNativeTarget "SampleService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD9BCB815B252CC00F0007B /* Debug */,
+				3CD9BCB915B252CC00F0007B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

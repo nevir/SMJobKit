@@ -12,7 +12,7 @@
 	<string>0.01</string>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___PROJECTNAME___ and certificate leaf[subject.CN] = &quot;&lt;CODE_SIGN_IDENTITY&gt;&quot;</string>
+		<string>identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___PROJECTNAME___ and certificate leaf[subject.CN] = &quot;${CODE_SIGN_IDENTITY}&quot;</string>
 	</array>
 </dict>
 </plist>
