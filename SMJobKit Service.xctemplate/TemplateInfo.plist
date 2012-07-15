@@ -107,14 +107,14 @@
 			<string>com.apple.product-type.tool</string>
 			<key>SharedSettings</key>
 			<dict>
-        <key>SMJ_SOURCE_INFO_PLIST_PATH</key>
-        <string>___PACKAGENAME___/Info.plist</string>
-        <key>SMJ_PROCESSED_INFO_PLIST_PATH</key>
-        <string>$(BUILD_DIR)/___PACKAGENAME___/Info.plist</string>
-				<key>PRODUCT_NAME</key>
+        <key>PRODUCT_NAME</key>
 				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PROJECT_NAME).$(TARGET_NAME)</string>
+        <key>SMJ_PREPROCESS_DIR</key>
+        <string>$(BUILD_DIR)/Preprocessed</string>
+        <key>SMJ_PREPROCESS_FILES</key>
+        <string>___PACKAGENAME___/Info.plist, ___PACKAGENAME___/Launchd.plist</string>
 				<key>OTHER_LDFLAGS</key>
-				<string>-sectcreate __TEXT __info_plist &quot;$(SMJ_PROCESSED_INFO_PLIST_PATH)&quot; -sectcreate __TEXT __launchd_plist &quot;___PACKAGENAME___/Launchd.plist&quot;</string>
+				<string>-sectcreate __TEXT __info_plist &quot;$(SMJ_PREPROCESS_DIR)/___PACKAGENAME___/Info.plist&quot; -sectcreate __TEXT __launchd_plist &quot;$(SMJ_PREPROCESS_DIR)/___PACKAGENAME___/Launchd.plist&quot;</string>
 			</dict>
 			<key>BuildPhases</key>
 			<array>
@@ -124,15 +124,21 @@
 					<key>ShellPath</key>
 					<string>/usr/bin/env ruby</string>
 					<key>ShellScript</key>
-					<string># Preprocess &lt;ENV_VAR&gt; definitions in the Info.plist,
-# Primarily so that we can fill in the proper code signing identity.
+					<string># Generic preprocessing for ${ENV_VAR} with output to the build dir.
+
 require 'cgi'
 require 'fileutils'
 
-missing_keys = ['BUILD_DIR', 'CODE_SIGN_IDENTITY', 'SMJ_SOURCE_INFO_PLIST_PATH', 'SMJ_PROCESSED_INFO_PLIST_PATH'] - ENV.keys
+missing_keys = ['BUILD_DIR', 'CODE_SIGN_IDENTITY', 'SMJ_PREPROCESS_FILES', 'SMJ_PREPROCESS_DIR'] - ENV.keys
 raise &quot;Missing required ENV values: #{missing_keys.inspect}&quot; if missing_keys.size &gt; 0
 
+# SMJ_PREPROCESS_FILES is a comma-separated list of *relative* file paths to preprocess
+#  and spit out into the SMJ_PREPROCESS_DIR (w/ the same relative paths as given)
+files_to_preprocess = ENV['SMJ_PREPROCESS_FILES'].split(',').map(&amp;:strip)
 
+
+# Environment Cleanup
+# -------------------
 dummy_path = &quot;#{ENV['BUILD_DIR']}/SMJobKitCodeSigningDummy&quot;
 
 identity = ENV['CODE_SIGN_IDENTITY']
@@ -148,15 +154,23 @@ result = `codesign --display --verbose --verbose &quot;#{dummy_path}&quot; 2&gt;
 
 ENV['CODE_SIGN_IDENTITY'] = result[/Authority\=(.*#{Regexp.escape(identity)}.*)/, 1]
 
-# Now that we have the proper identity, we can set up the temporary plist
-open(ENV['SMJ_SOURCE_INFO_PLIST_PATH']) do |input|
-  FileUtils.mkpath File.dirname(ENV['SMJ_PROCESSED_INFO_PLIST_PATH'])
-  
-  open(ENV['SMJ_PROCESSED_INFO_PLIST_PATH'], 'w') do |output|
-    output.write input.read.gsub(/&amp;lt;([A-Z_]+)&amp;gt;/) { CGI.escapeHTML(ENV[$1]) }
+
+# Actual Preprocessing
+# --------------------
+
+files_to_preprocess.each do |path|
+  target_path = File.join(ENV['SMJ_PREPROCESS_DIR'], path)
+  FileUtils.mkpath File.dirname(target_path)
+
+  open(path) do |input|
+    open(target_path, 'w') do |output|
+      # Specify macros via ${VAR_NAME} in the preprocessed file.  Same as regular
+      # Info.plist preprocessing.
+      output.write input.read.gsub(/\$\{([A-Z_]+)\}/) { CGI.escapeHTML(ENV[$1]) }
+    end
+    puts target_path
   end
-end
-</string>
+end</string>
 				</dict>
         <dict>
 					<key>Class</key>
