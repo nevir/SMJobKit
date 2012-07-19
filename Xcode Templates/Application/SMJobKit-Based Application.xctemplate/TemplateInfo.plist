@@ -98,23 +98,14 @@ files_to_preprocess.each do |path|
   end
 end</string>
 									</dict>
-								</array>
-								<key>Frameworks</key>
-								<array>
-									<string>SMJobKit</string>
-								</array>
-							</dict>
-						</array>
-						<key>Components</key>
-						<array>
-							<dict>
-								<key>Identifier</key>
-								<string>net.nevir.SMJobKit.Service</string>
-								<key>Name</key>
-								<string>___VARIABLE_smjServiceName:RFC1034Identifier___</string>
-								<key>Dependents</key>
-								<array>
-									<string>0</string>
+									<dict>
+										<key>Class</key>
+										<string>CopyFiles</string>
+										<key>DstPath</key>
+										<string>Contents/Library/LaunchServices</string>
+										<key>DstSubfolderSpec</key>
+										<integer>1</integer>
+									</dict>
 								</array>
 							</dict>
 						</array>
