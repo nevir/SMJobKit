@@ -119,6 +119,10 @@ end</string>
               <string>___PACKAGENAME___-Info.plist:SMPrivilegedExecutables</string>
               <string>___VARIABLE_smjServiceName:RFC1034Identifier___.h</string>
               <string>___VARIABLE_smjServiceName:RFC1034Identifier___.m</string>
+              <string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_smjServiceName:RFC1034Identifier___.h</string>
+              <string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidFinishLaunching:installSMJServices</string>
+              <string>___VARIABLE_classPrefix:identifier___AppDelegate.m:installServices</string>
+              <string>___VARIABLE_classPrefix:identifier___AppDelegate.m:installServices:___VARIABLE_smjServiceName:RFC1034Identifier___</string>
 						</array>
 						<key>Definitions</key>
 						<dict>
@@ -149,6 +153,31 @@ end</string>
                 <key>Group</key>
                 <string>Service Clients</string>
               </dict>
+              <key>___VARIABLE_classPrefix:identifier___AppDelegate.m:installServices</key>
+              <dict>
+                <key>Beginning</key>
+                <string>- (void)installServices
+{</string>
+                <key>End</key>
+                <string>}</string>
+                <key>Indent</key>
+                <integer>1</integer>
+              </dict>
+              <key>___VARIABLE_classPrefix:identifier___AppDelegate.m:installServices:___VARIABLE_smjServiceName:RFC1034Identifier___</key>
+              <string>if ([___VARIABLE_smjServiceName:RFC1034Identifier___ isLatestVersionInstalled]) return;
+
+NSError *error;
+// The user will be prompted with the following:
+//
+// &lt;Your Custom Message Here&gt;
+// ___VARIABLE_productName___ is trying to install a new
+// helper tool.  Type your password to allow this.
+if (![___VARIABLE_smjServiceName:RFC1034Identifier___ installWithPrompt:@"&lt;Your Custom Message Here&gt;" error:&amp;error])
+{
+  // Let the user know something went wrong!
+}</string>
+              <key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidFinishLaunching:installSMJServices</key>
+              <string>[self installServices];</string>
 						</dict>
 					</dict>
 				</array>

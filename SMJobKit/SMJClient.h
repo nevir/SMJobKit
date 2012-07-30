@@ -10,6 +10,7 @@
 // Standard Interface
 + (NSString*) bundledVersion;
 + (NSString*) installedVersion;
++ (BOOL) isLatestVersionInstalled;
 
 + (BOOL) installWithPrompt:(NSString*)prompt error:(NSError **)error;
 + (BOOL) uninstallWithPrompt:(NSString*)prompt error:(NSError **)error;

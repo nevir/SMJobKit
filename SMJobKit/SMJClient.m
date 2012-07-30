@@ -37,9 +37,14 @@
   return [SMJClientUtility versionForBundlePath:[self installedServicePath]];
 }
 
++ (BOOL) isLatestVersionInstalled
+{
+  return [self installedVersion] && [[self installedVersion] isEqualTo:[self bundledVersion]];
+}
+
 + (BOOL) installWithPrompt:(NSString*)prompt error:(NSError **)error
 {
-  if ([self installedVersion] && [[self installedVersion] isEqualTo:[self bundledVersion]])
+  if ([self isLatestVersionInstalled])
   {
     NSLog(@"%@ (%@) is already current, skipping install.", [self serviceIdentifier], [self bundledVersion]);
     return YES;
