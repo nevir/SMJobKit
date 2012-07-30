@@ -187,6 +187,8 @@
 		3C560DE915AA3DD700A05BC2 /* TestHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHelpers.h; sourceTree = "<group>"; };
 		3C560DEA15AA4E0600A05BC2 /* SMJDiagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJDiagnostics.h; sourceTree = "<group>"; };
 		3C560DEB15AA4E0600A05BC2 /* SMJDiagnostics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJDiagnostics.m; sourceTree = "<group>"; };
+		3C6A266715C628B300F4ADDC /* ___VARIABLE_smjServiceName:RFC1034Identifier___.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "___VARIABLE_smjServiceName:RFC1034Identifier___.h"; sourceTree = "<group>"; };
+		3C6A266815C628B300F4ADDC /* ___VARIABLE_smjServiceName:RFC1034Identifier___.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___VARIABLE_smjServiceName:RFC1034Identifier___.m"; sourceTree = "<group>"; };
 		3C75ECC215AD39600041240E /* SMJMissingClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJMissingClient.h; sourceTree = "<group>"; };
 		3C75ECC315AD39600041240E /* SMJMissingClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMJMissingClient.m; sourceTree = "<group>"; };
 		3CA1507115A91179001CF9F8 /* SMJobKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMJobKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -512,9 +514,9 @@
 			children = (
 				3CD9BC9815B2503F00F0007B /* ___PACKAGENAMEASIDENTIFIER___-Info.plist */,
 				3CD9BC9915B2503F00F0007B /* ___PACKAGENAMEASIDENTIFIER___-Launchd.plist */,
+				3CCC06D515AA837E00C84BE1 /* main.m */,
 				3CCC06D615AA837E00C84BE1 /* TemplateIcon.icns */,
 				3CCC06D715AA837E00C84BE1 /* TemplateInfo.plist */,
-				3CCC06D515AA837E00C84BE1 /* main.m */,
 			);
 			path = "SMJobKit Service.xctemplate";
 			sourceTree = "<group>";
@@ -547,8 +549,10 @@
 		3CD9BCD015B2632D00F0007B /* SMJobKit-Based Application.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
-				3CD9BCD315B2632D00F0007B /* TemplateInfo.plist */,
+				3C6A266715C628B300F4ADDC /* ___VARIABLE_smjServiceName:RFC1034Identifier___.h */,
+				3C6A266815C628B300F4ADDC /* ___VARIABLE_smjServiceName:RFC1034Identifier___.m */,
 				3CFB0E2015B37DE400FA0E6B /* README-SMJobKit.md */,
+				3CD9BCD315B2632D00F0007B /* TemplateInfo.plist */,
 			);
 			path = "SMJobKit-Based Application.xctemplate";
 			sourceTree = "<group>";

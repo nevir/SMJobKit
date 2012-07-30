@@ -117,6 +117,8 @@ end</string>
 						<array>
 							<string>README-SMJobKit.md</string>
               <string>___PACKAGENAME___-Info.plist:SMPrivilegedExecutables</string>
+              <string>___VARIABLE_smjServiceName:RFC1034Identifier___.h</string>
+              <string>___VARIABLE_smjServiceName:RFC1034Identifier___.m</string>
 						</array>
 						<key>Definitions</key>
 						<dict>
@@ -133,6 +135,20 @@ end</string>
                 &lt;string&gt;identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.[[[PROJECT_NAME]]].___VARIABLE_smjServiceName:RFC1034Identifier___ and certificate leaf[subject.CN] = &quot;[[[FULL_CODE_SIGN_IDENTITY]]]&quot;&lt;/string&gt;
                 &lt;/dict&gt;
               </string>
+              <key>___VARIABLE_smjServiceName:RFC1034Identifier___.h</key>
+              <dict>
+                <key>Path</key>
+                <string>___VARIABLE_smjServiceName:RFC1034Identifier___.h</string>
+                <key>Group</key>
+                <string>Service Clients</string>
+              </dict>
+              <key>___VARIABLE_smjServiceName:RFC1034Identifier___.m</key>
+              <dict>
+                <key>Path</key>
+                <string>___VARIABLE_smjServiceName:RFC1034Identifier___.m</string>
+                <key>Group</key>
+                <string>Service Clients</string>
+              </dict>
 						</dict>
 					</dict>
 				</array>
