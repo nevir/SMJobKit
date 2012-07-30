@@ -30,6 +30,19 @@
 				<key>true</key>
 				<array>
 					<dict>
+            <key>Components</key>
+            <array>
+              <dict>
+                <key>Identifier</key>
+                <string>net.nevir.SMJobKit.Service</string>
+                <key>Name</key>
+                <string>___VARIABLE_smjServiceName:RFC1034Identifier___</string>
+                <key>Dependents</key>
+                <array>
+                  <string>0</string>
+                </array>
+              </dict>
+            </array>
 						<key>Targets</key>
 						<array>
 							<dict>
