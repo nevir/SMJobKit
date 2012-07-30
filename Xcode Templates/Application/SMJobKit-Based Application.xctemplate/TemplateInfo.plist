@@ -50,10 +50,6 @@
 								<dict>
 									<key>CODE_SIGN_IDENTITY</key>
 									<string>Mac Developer</string>
-									<key>SMJ_PREPROCESS_DIR</key>
-									<string>$(BUILD_DIR)/Preprocessed</string>
-									<key>SMJ_PREPROCESS_FILES</key>
-									<string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___-Info.plist</string>
 								</dict>
 								<key>BuildPhases</key>
 								<array>
@@ -63,21 +59,19 @@
 										<key>ShellPath</key>
 										<string>/usr/bin/env ruby</string>
 										<key>ShellScript</key>
-										<string># Generic preprocessing for ${ENV_VAR} with output to the build dir.
+										<string># Postprocessing for your info.plist.  Primarily so that we can inject your full dev certificate name.
 
 require &apos;cgi&apos;
 require &apos;fileutils&apos;
 
-missing_keys = [&apos;BUILD_DIR&apos;, &apos;CODE_SIGN_IDENTITY&apos;, &apos;SMJ_PREPROCESS_FILES&apos;, &apos;SMJ_PREPROCESS_DIR&apos;] - ENV.keys
+missing_keys = [&apos;BUILD_DIR&apos;, &apos;CODE_SIGN_IDENTITY&apos;, &apos;TARGET_BUILD_DIR&apos;, &apos;INFOPLIST_PATH&apos;] - ENV.keys
 raise &quot;Missing required ENV values: #{missing_keys.inspect}&quot; if missing_keys.size &gt; 0
 
-# SMJ_PREPROCESS_FILES is a comma-separated list of *relative* file paths to preprocess
-#  and spit out into the SMJ_PREPROCESS_DIR (w/ the same relative paths as given)
-files_to_preprocess = ENV[&apos;SMJ_PREPROCESS_FILES&apos;].split(&apos;,&apos;).map(&amp;:strip)
+files_to_postprocess = [ENV[&apos;INFOPLIST_PATH&apos;]]
 
 
-# Environment Cleanup
-# -------------------
+# FULL_CODE_SIGN_IDENTITY
+# -----------------------
 dummy_path = &quot;#{ENV[&apos;BUILD_DIR&apos;]}/SMJobKitCodeSigningDummy&quot;
 
 identity = ENV[&apos;CODE_SIGN_IDENTITY&apos;]
@@ -97,17 +91,13 @@ ENV[&apos;FULL_CODE_SIGN_IDENTITY&apos;] = result[/Authority\=(.*#{Regexp.escape
 # Actual Preprocessing
 # --------------------
 
-files_to_preprocess.each do |path|
-  target_path = File.join(ENV[&apos;SMJ_PREPROCESS_DIR&apos;], path)
-  FileUtils.mkpath File.dirname(target_path)
+files_to_postprocess.each do |path|
+  target_path = File.join(ENV[&apos;TARGET_BUILD_DIR&apos;], path)
 
-  open(path) do |input|
-    open(target_path, &apos;w&apos;) do |output|
-      # Specify macros via ${VAR_NAME} in the preprocessed file.  Same as regular
-      # Info.plist preprocessing.
-      output.write input.read.gsub(/\$\{([A-Z_]+)\}/) { CGI.escapeHTML(ENV[$1]) }
-    end
-    puts target_path
+  input = open(target_path).read
+  open(target_path, 'w') do |output|
+    # Specify macros via [[[VAR_NAME]]] to avoid clashes w/ regular plist preprocessing.
+    output.write input.gsub(/\[\[\[([A-Z_]+)\]\]\]/) { CGI.escapeHTML(ENV[$1]) }
   end
 end</string>
 									</dict>
@@ -139,8 +129,8 @@ end</string>
               <string>
                 &lt;key&gt;SMPrivilegedExecutables&lt;/key&gt;
                 &lt;dict&gt;
-                &lt;key&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PROJECT_NAME}.___VARIABLE_smjServiceName:RFC1034Identifier___&lt;/key&gt;
-                &lt;string&gt;identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PROJECT_NAME}.___VARIABLE_smjServiceName:RFC1034Identifier___ and certificate leaf[subject.CN] = &quot;${FULL_CODE_SIGN_IDENTITY}&quot;&lt;/string&gt;
+                &lt;key&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.[[[PROJECT_NAME]]].___VARIABLE_smjServiceName:RFC1034Identifier___&lt;/key&gt;
+                &lt;string&gt;identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.[[[PROJECT_NAME]]].___VARIABLE_smjServiceName:RFC1034Identifier___ and certificate leaf[subject.CN] = &quot;[[[FULL_CODE_SIGN_IDENTITY]]]&quot;&lt;/string&gt;
                 &lt;/dict&gt;
               </string>
 						</dict>

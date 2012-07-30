@@ -3,15 +3,12 @@ Getting Started With Your SMJobKit-based Application
 
 There are a few manual steps that you need to perform before you can build your application:
 
-1. In your application's target, move the `Run Script` (Generic preprocessing) build phase to
-   _before_ the `Compile Sources` build phase.
-
-2. Add the SMJobKit Xcode project to your project or workspace.
-
-3. Set up your application's target to link with SMJobKit.framework.
-
-4. Add your service's binary (product) to the Copy Files build phase of your application (the phase
+1. Add your service's binary (product) to the Copy Files build phase of your application (the phase
    for `Contents/Library/LaunchServices`).
+
+2. Set up your application's target to link with `SMJobKit.framework`.
+
+3. Set up your service's target to link with `libSMJService.a`.
 
 Xcode templates can do a lot, but not everything!  Plus, they're not really documented.  If you
 know how to accomplish any of the above steps via template configuration, let me know, please :)
