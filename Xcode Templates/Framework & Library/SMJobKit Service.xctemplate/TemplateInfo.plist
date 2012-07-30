@@ -154,7 +154,7 @@ identity = &quot;#{identity}:&quot; if identity.end_with? &apos; Developer&apos;
 result = `codesign --display --verbose --verbose &quot;#{dummy_path}&quot; 2&gt;&amp;1`
 `rm #{dummy_path}`
 
-ENV[&apos;CODE_SIGN_IDENTITY&apos;] = result[/Authority\=(.*#{Regexp.escape(identity)}.*)/, 1]
+ENV[&apos;FULL_CODE_SIGN_IDENTITY&apos;] = result[/Authority\=(.*#{Regexp.escape(identity)}.*)/, 1]
 
 
 # Actual Preprocessing

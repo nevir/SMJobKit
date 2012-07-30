@@ -12,7 +12,7 @@
 	<string>0.01</string>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>identifier ${PARENT_APPLICATION_IDENTIFIER} and certificate leaf[subject.CN] = &quot;${CODE_SIGN_IDENTITY}&quot;</string>
+		<string>identifier ${PARENT_APPLICATION_IDENTIFIER} and certificate leaf[subject.CN] = &quot;${FULL_CODE_SIGN_IDENTITY}&quot;</string>
 	</array>
 </dict>
 </plist>

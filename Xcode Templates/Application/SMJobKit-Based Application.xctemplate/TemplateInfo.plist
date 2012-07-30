@@ -91,7 +91,7 @@ identity = &quot;#{identity}:&quot; if identity.end_with? &apos; Developer&apos;
 result = `codesign --display --verbose --verbose &quot;#{dummy_path}&quot; 2&gt;&amp;1`
 `rm #{dummy_path}`
 
-ENV[&apos;CODE_SIGN_IDENTITY&apos;] = result[/Authority\=(.*#{Regexp.escape(identity)}.*)/, 1]
+ENV[&apos;FULL_CODE_SIGN_IDENTITY&apos;] = result[/Authority\=(.*#{Regexp.escape(identity)}.*)/, 1]
 
 
 # Actual Preprocessing
@@ -140,7 +140,7 @@ end</string>
                 &lt;key&gt;SMPrivilegedExecutables&lt;/key&gt;
                 &lt;dict&gt;
                 &lt;key&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PROJECT_NAME}.___VARIABLE_smjServiceName:RFC1034Identifier___&lt;/key&gt;
-                &lt;string&gt;identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PROJECT_NAME}.___VARIABLE_smjServiceName:RFC1034Identifier___ and certificate leaf[subject.CN] = &quot;${CODE_SIGN_IDENTITY}&quot;&lt;/string&gt;
+                &lt;string&gt;identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PROJECT_NAME}.___VARIABLE_smjServiceName:RFC1034Identifier___ and certificate leaf[subject.CN] = &quot;${FULL_CODE_SIGN_IDENTITY}&quot;&lt;/string&gt;
                 &lt;/dict&gt;
               </string>
 						</dict>
