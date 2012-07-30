@@ -112,6 +112,7 @@ files_to_preprocess.each do |path|
 end</string>
 									</dict>
 									<dict>
+                    <!-- http://stackoverflow.com/questions/7236469/ -->
 										<key>Class</key>
 										<string>CopyFiles</string>
 										<key>DstPath</key>
