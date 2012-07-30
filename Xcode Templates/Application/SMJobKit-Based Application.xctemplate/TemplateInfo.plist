@@ -126,6 +126,7 @@ end</string>
 						<key>Nodes</key>
 						<array>
 							<string>README-SMJobKit.md</string>
+              <string>___PACKAGENAME___-Info.plist:SMPrivilegedExecutables</string>
 						</array>
 						<key>Definitions</key>
 						<dict>
@@ -134,6 +135,14 @@ end</string>
 								<key>Path</key>
 								<string>README-SMJobKit.md</string>
 							</dict>
+              <key>___PACKAGENAME___-Info.plist:SMPrivilegedExecutables</key>
+              <string>
+                &lt;key&gt;SMPrivilegedExecutables&lt;/key&gt;
+                &lt;dict&gt;
+                &lt;key&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PROJECT_NAME}.___VARIABLE_smjServiceName:RFC1034Identifier___&lt;/key&gt;
+                &lt;string&gt;identifier ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PROJECT_NAME}.___VARIABLE_smjServiceName:RFC1034Identifier___ and certificate leaf[subject.CN] = &quot;${CODE_SIGN_IDENTITY}&quot;&lt;/string&gt;
+                &lt;/dict&gt;
+              </string>
 						</dict>
 					</dict>
 				</array>
