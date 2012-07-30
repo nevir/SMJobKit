@@ -137,7 +137,7 @@ end</string>
 			<key>Description</key>
 			<string>The SMJobKit service&apos;s base name</string>
 			<key>EmptyReplacement</key>
-			<string>___PACKAGENAME___Service</string>
+			<string>ServiceName</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>RequiredOptions</key>
