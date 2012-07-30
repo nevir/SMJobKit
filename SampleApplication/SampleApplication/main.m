@@ -2,8 +2,8 @@
 //  main.m
 //  SampleApplication
 //
-//  Created by Ian MacLeod on 7/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Ian MacLeod on 7/29/12.
+//  Copyright (c) 2012 Ian MacLeod. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

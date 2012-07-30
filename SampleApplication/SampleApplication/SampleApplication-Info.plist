@@ -27,15 +27,15 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 __MyCompanyName__. All rights reserved.</string>
+	<string>Copyright © 2012 Ian MacLeod. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SMPrivilegedExecutables</key>
 	<dict>
-		<key>net.nevir.SMJobKit.SampleApplication.SampleService</key>
-		<string>identifier net.nevir.SMJobKit.${PRODUCT_NAME:rfc1034identifier}.SampleService and certificate leaf[subject.CN] = &quot;Mac Developer: Ian MacLeod (LJGX7BEELQ)&quot;</string>
+		<key>net.nevir.SMJobKit.[[[PROJECT_NAME]]].SampleService</key>
+		<string>identifier net.nevir.SMJobKit.[[[PROJECT_NAME]]].SampleService and certificate leaf[subject.CN] = "[[[FULL_CODE_SIGN_IDENTITY]]]"</string>
 	</dict>
 </dict>
 </plist>

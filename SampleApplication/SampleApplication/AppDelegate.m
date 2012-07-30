@@ -1,9 +1,16 @@
+//
+//  AppDelegate.m
+//  SampleApplication
+//
+//  Created by Ian MacLeod on 7/29/12.
+//  Copyright (c) 2012 Ian MacLeod. All rights reserved.
+//
+
 #import "AppDelegate.h"
+
 #import "SampleService.h"
 
 @implementation AppDelegate
-
-@synthesize window = _window;
 @synthesize outputTextView = _outputTextView;
 @synthesize bundledVersionLabel = _bundledVersionLabel;
 @synthesize installedVersionLabel = _installedVersionLabel;
@@ -56,7 +63,7 @@
   
   version = [SampleService installedVersion];
   [self.installedVersionLabel setTitleWithMnemonic:(version) ? version : @"Not Installed"];
-
+  
   [[SampleService checkForProblems] enumerateObjectsUsingBlock:^(NSError* error, NSUInteger i, BOOL *stop) {
     [self appendMessage:error];
   }];
