@@ -20,7 +20,7 @@
   SecStaticCodeRef codeRef;
   OSStatus result;
   
-  result = SecStaticCodeCreateWithPath((__bridge CFURLRef)[NSURL URLWithString:bundlePath], kSecCSDefaultFlags, &codeRef);
+  result = SecStaticCodeCreateWithPath((__bridge CFURLRef)[NSURL fileURLWithPath:bundlePath], kSecCSDefaultFlags, &codeRef);
   if (result != noErr)
   {
     if (result == errSecCSUnsigned)
